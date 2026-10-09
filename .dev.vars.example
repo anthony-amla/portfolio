@@ -1,1 +1,15 @@
-DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/SEU_WEBHOOK
+# Copy to .dev.vars for `npm run dev:pages`. Every channel is optional, but at
+# least one of Discord or email must be configured for the form to deliver.
+
+# Discord: Channel settings → Integrations → Webhooks → New webhook → Copy URL
+DISCORD_WEBHOOK_URL=
+
+# Email via Resend (resend.com, free plan). Without a verified domain Resend only
+# delivers to the address you signed up with, sent from onboarding@resend.dev.
+RESEND_API_KEY=
+CONTACT_EMAIL_TO=
+# Optional, requires a verified domain on Resend: Portfolio <contato@your-domain.com>
+CONTACT_EMAIL_FROM=
+
+# Cloudflare Turnstile secret key (anti-spam). Leave empty to disable.
+TURNSTILE_SECRET_KEY=

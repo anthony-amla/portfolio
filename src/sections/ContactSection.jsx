@@ -1,96 +1,13 @@
 import { useState } from 'react'
 import Icon from '../components/icons/Icon'
-import { Section, Window } from '../components/ui'
+import { Section } from '../components/ui'
 import { SECTION } from '../config/site'
 import { contacts } from '../content/portfolio'
+import ContactForm from '../features/contact/ContactForm'
 import { reveal } from '../hooks/useReveal'
 import { useI18n } from '../i18n/context'
 
-const CONTACT_ENDPOINT = '/api/contact'
 const COPIED_FEEDBACK_MS = 2000
-
-const FIELD_LIMITS = { name: 80, contact: 120, message: 2000 }
-
-const email = contacts.find((channel) => channel.id === 'email')?.value
-
-/** @typedef {'idle' | 'sending' | 'sent' | 'error'} SubmitStatus */
-
-async function sendMessage(payload) {
-  const response = await fetch(CONTACT_ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  })
-  if (!response.ok) throw new Error(`Contact request failed with ${response.status}`)
-}
-
-function ContactForm() {
-  const { t } = useI18n()
-  /** @type {[SubmitStatus, (status: SubmitStatus) => void]} */
-  const [status, setStatus] = useState('idle')
-  const subjects = t('contact.subjects')
-
-  async function handleSubmit(event) {
-    event.preventDefault()
-    const form = event.currentTarget
-    setStatus('sending')
-    try {
-      await sendMessage(Object.fromEntries(new FormData(form)))
-      form.reset()
-      setStatus('sent')
-    } catch {
-      setStatus('error')
-    }
-  }
-
-  return (
-    <Window title={t('contact.windowTitle')} icon="mail">
-      <form className="form" onSubmit={handleSubmit}>
-        <div className="form-row">
-          <label className="field">
-            <span>{t('contact.fields.name')}</span>
-            <input name="name" required maxLength={FIELD_LIMITS.name} autoComplete="name" />
-          </label>
-          <label className="field">
-            <span>{t('contact.fields.contact')}</span>
-            <input name="contact" required maxLength={FIELD_LIMITS.contact} />
-          </label>
-        </div>
-
-        <label className="field">
-          <span>{t('contact.fields.subject')}</span>
-          <select name="subject" defaultValue={subjects[0]}>
-            {subjects.map((subject) => (
-              <option key={subject}>{subject}</option>
-            ))}
-          </select>
-        </label>
-
-        <label className="field">
-          <span>{t('contact.fields.message')}</span>
-          <textarea name="message" required rows={5} maxLength={FIELD_LIMITS.message} />
-        </label>
-
-        {/* Honeypot: hidden from people, filled in by bots. */}
-        <input name="website" tabIndex={-1} autoComplete="off" className="honeypot" aria-hidden />
-
-        <div className="form-actions">
-          <button type="submit" className="px-btn" disabled={status === 'sending'}>
-            {t(status === 'sending' ? 'contact.sending' : 'contact.submit')} <Icon name="arrowRight" size={16} />
-          </button>
-          <p className="form-status" role="status">
-            {status === 'sent' && <span className="text-success">{t('contact.sent')}</span>}
-            {status === 'error' && (
-              <span className="text-danger">
-                {t('contact.error')} <a href={`mailto:${email}`}>{email}</a>.
-              </span>
-            )}
-          </p>
-        </div>
-      </form>
-    </Window>
-  )
-}
 
 /** @param {{ channel: { id: string, value?: string, href: string, copyable?: boolean } }} props */
 function ChannelCard({ channel }) {
@@ -139,8 +56,8 @@ function ChannelCard({ channel }) {
   )
 }
 
-/** @param {{ footer?: import('react').ReactNode }} props */
-export default function ContactSection({ footer }) {
+/** @param {{ theme: 'day' | 'night', footer?: import('react').ReactNode }} props */
+export default function ContactSection({ theme, footer }) {
   const { t } = useI18n()
 
   return (
@@ -153,7 +70,7 @@ export default function ContactSection({ footer }) {
     >
       <div className="contact-grid">
         <div {...reveal(1)}>
-          <ContactForm />
+          <ContactForm theme={theme} />
         </div>
         <ul className="channels">
           {contacts.map((channel, index) => (

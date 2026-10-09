@@ -1,3 +1,8 @@
+/** Public Turnstile site key, set at build time. Empty disables the widget. */
+export const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY ?? ''
+
+export const CONTACT_ENDPOINT = '/api/contact'
+
 export const STORAGE_KEYS = {
   theme: 'ghst-theme',
   music: 'ghst-music',

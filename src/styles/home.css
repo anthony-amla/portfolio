@@ -904,3 +904,7 @@ a.server-card:hover {
   margin-left: auto;
   color: var(--ink-2);
 }
+
+.turnstile {
+  min-height: 65px;
+}

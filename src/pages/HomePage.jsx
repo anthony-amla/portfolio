@@ -26,7 +26,7 @@ export default function HomePage({ theme, onToggleTheme }) {
       <ServersSection />
       <ProjectsSection />
       <StackSection />
-      <ContactSection footer={<Footer />} />
+      <ContactSection theme={theme} footer={<Footer />} />
     </>
   )
 }
