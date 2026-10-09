@@ -1,5 +1,12 @@
-/** Public Turnstile site key, set at build time. Empty disables the widget. */
-export const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY ?? ''
+/** Turnstile site key of the ghst-portfolio.pages.dev widget. Site keys are public by design. */
+const PRODUCTION_TURNSTILE_SITE_KEY = '0x4AAAAAAFSAcec-kIs5FDYk'
+
+/**
+ * Active Turnstile site key: `VITE_TURNSTILE_SITE_KEY` when set, otherwise the
+ * production key in builds only (the widget rejects localhost). Empty disables it.
+ */
+export const TURNSTILE_SITE_KEY =
+  import.meta.env.VITE_TURNSTILE_SITE_KEY ?? (import.meta.env.PROD ? PRODUCTION_TURNSTILE_SITE_KEY : '')
 
 export const CONTACT_ENDPOINT = '/api/contact'
 

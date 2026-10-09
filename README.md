@@ -81,9 +81,9 @@ Routes: `/` (home, with `#about`, `#journey`, `#servers`, `#projects`, `#stack`,
 | `CONTACT_EMAIL_TO`        | Variable                 | Inbox that receives the messages                                     |
 | `CONTACT_EMAIL_FROM`      | Variable, optional       | Custom sender; requires a domain verified on Resend                  |
 | `TURNSTILE_SECRET_KEY`    | Secret, optional         | Turnstile secret key; enables server-side anti-spam                  |
-| `VITE_TURNSTILE_SITE_KEY` | Build variable, optional | Turnstile site key; shows the widget in the form                     |
+| `VITE_TURNSTILE_SITE_KEY` | Build variable, optional | Overrides the production site key in `src/config/site.js`            |
 
-Configure Discord, email or both. Without a verified domain, Resend only delivers to the address you signed up with, sent from `onboarding@resend.dev`; replies go straight to the visitor when they typed an email. Set both Turnstile keys or neither.
+Configure Discord, email or both. Without a verified domain, Resend only delivers to the address you signed up with, sent from `onboarding@resend.dev`; replies go straight to the visitor when they typed an email. The production site key is already in `src/config/site.js`, so production only needs `TURNSTILE_SECRET_KEY`; without it the server skips the check.
 
 ## Deploying to Cloudflare Pages
 
