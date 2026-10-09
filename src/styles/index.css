@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-pixel: 'Pixelify Sans', ui-monospace, monospace;
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
+
+@import './tokens.css';
+@import './base.css';
+@import './ui.css';
+@import './layout.css';
+@import './controls.css';
+@import './room.css';
+@import './home.css';
+@import './project.css';
+@import './scrollbar.css';

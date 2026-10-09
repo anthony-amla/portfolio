@@ -1,0 +1,36 @@
+/* Chromium and Safari: full custom scrollbar. */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--toolbar-bg);
+  border-left: 2px solid var(--line);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bar);
+  background-image: repeating-linear-gradient(to bottom, transparent 0 6px, rgba(0, 0, 0, 0.22) 6px 8px);
+  border: 2px solid var(--line);
+  border-radius: 3px;
+  box-shadow:
+    inset 2px 2px 0 rgba(255, 255, 255, 0.3),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--btn-hi);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--toolbar-bg);
+}
+
+/* Firefox only supports colors. Kept behind @supports because in Chromium
+   scrollbar-color would override the ::-webkit-scrollbar styles above. */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-color: var(--bar) var(--toolbar-bg);
+  }
+}

@@ -1,0 +1,126 @@
+.project-page {
+  justify-content: flex-start;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  color: var(--accent);
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.project-header {
+  margin-bottom: 28px;
+}
+
+.project-header p {
+  margin: 0;
+}
+
+.project-layout {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .project-layout {
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  }
+}
+
+.gallery-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background-color: var(--panel-2);
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 var(--shadow);
+  font-size: 40px;
+}
+
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.feature-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  position: relative;
+  margin-top: 6px;
+  padding-left: 20px;
+}
+
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  top: 0.6em;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+}
+
+.project-header .section-title {
+  margin-top: 12px;
+}
+
+.project-header .project-summary {
+  max-width: 42rem;
+  margin-top: 12px;
+  color: var(--ink-2);
+  font-size: 1.125rem;
+}
+
+.project-layout .feature-list {
+  margin-top: 0;
+}
+
+.project-stack-title {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.project-link {
+  margin-top: 20px;
+}
+
+.gallery-counter {
+  font-family: var(--font-pixel);
+  font-size: 14px;
+}
+
+.related-projects {
+  margin-top: 64px;
+}
+
+.related-title {
+  margin: 0 0 16px;
+  font-family: var(--font-pixel);
+  font-size: 1.5rem;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found .section-intro {
+  margin-bottom: 24px;
+}

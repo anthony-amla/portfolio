@@ -1,0 +1,118 @@
+.room-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.room {
+  position: relative;
+}
+
+.room canvas {
+  display: block;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.speech-bubble {
+  position: absolute;
+  z-index: 2;
+  width: max-content;
+  max-width: min(250px, 72vw);
+  margin: 0;
+  padding: 6px 10px;
+  transform: translate(-50%, calc(-100% - 10px));
+  background: #fff;
+  color: #14182a;
+  border: 2px solid #14182a;
+  border-radius: 9px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  line-height: 1.35;
+  pointer-events: none;
+  animation: speech-bubble-life 7s ease-out forwards;
+}
+
+/* Game-style speech bubble: pops in, stays, then floats away. */
+@keyframes speech-bubble-life {
+  0% {
+    opacity: 0;
+    translate: 0 6px;
+  }
+  5%,
+  82% {
+    opacity: 1;
+    translate: 0 0;
+  }
+  100% {
+    opacity: 0;
+    translate: 0 -14px;
+  }
+}
+
+.speech-bubble::before,
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.speech-bubble::before {
+  bottom: -11px;
+  width: 16px;
+  height: 10px;
+  background: #14182a;
+}
+
+.speech-bubble::after {
+  bottom: -7px;
+  width: 10px;
+  height: 6px;
+  background: #fff;
+}
+
+.hotspot {
+  position: absolute;
+  padding: 0;
+  background: transparent;
+  border: 2px dashed transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hotspot:hover,
+.hotspot:focus-visible {
+  border-color: var(--hot);
+  background: rgba(255, 255, 255, 0.06);
+  outline: none;
+}
+
+.hotspot-tooltip {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  z-index: 3;
+  padding: 3px 8px;
+  transform: translateX(-50%);
+  background: rgba(10, 14, 26, 0.92);
+  color: #fff;
+  border-radius: 5px;
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hotspot-tooltip strong {
+  color: var(--hot);
+  font-weight: 600;
+}
+
+.hotspot:hover .hotspot-tooltip,
+.hotspot:focus-visible .hotspot-tooltip {
+  opacity: 1;
+}

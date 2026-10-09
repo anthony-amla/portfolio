@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murilo Araujo · Ghst</title>
+    <meta
+      name="description"
+      content="Murilo Araujo (Ghst): dev full-stack, especialista em FiveM e bacharel em Direito."
+    />
+    <meta property="og:title" content="Murilo Araujo · Ghst" />
+    <meta
+      property="og:description"
+      content="Dev full-stack, especialista em FiveM. Sistemas, interfaces, APIs e infraestrutura para servidores de roleplay."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0e1424" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Resolve theme and language before the first paint to avoid a flash.
+      ;(function () {
+        var root = document.documentElement
+        var saved = {}
+        try {
+          saved.theme = localStorage.getItem('ghst-theme')
+          saved.locale = localStorage.getItem('ghst-locale')
+        } catch (error) {}
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches
+        root.dataset.theme =
+          saved.theme === 'day' || saved.theme === 'night' ? saved.theme : prefersLight ? 'day' : 'night'
+        if (saved.locale === 'en') root.lang = 'en'
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
