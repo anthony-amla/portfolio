@@ -36,6 +36,7 @@ src/
   main.jsx                   Entry point and providers
   config/site.js             Section ids, nav items and storage keys
   content/portfolio.js       Language-independent data: links, images, ids, relations
+  content/projects/*.json    One file per project: data and text together
   i18n/                      Translations: locales/*.json, provider and translate function
   lib/                       Router, date helpers, safe localStorage access
   hooks/                     useTheme, useReveal, useDocumentTitle
@@ -59,10 +60,12 @@ Routes: `/` (home, with `#about`, `#journey`, `#servers`, `#projects`, `#stack`,
 ## Editing content
 
 - **Text:** every visible string lives in `src/i18n/locales/pt-BR.json` and `en.json`. Both files share the same keys; Portuguese is the default and the fallback for missing keys. Placeholders use `{name}`.
-- **Data:** links, images, server names, project tags and the relations between them live in `src/content/portfolio.js`. Items are matched to their text by `id` (for example `projects.items.<id>` in the locale files).
+- **Data:** links, images, server names and the relations between them live in `src/content/portfolio.js`. Items are matched to their text by `id` in the locale files.
+- **Projects:** one JSON file per project in `src/content/projects/`, with data and text (both languages) together. The editor validates and autocompletes it through `src/content/project.schema.json`. Text fields take a plain string or `{ "pt-BR": "...", "en": "..." }`. To add a project, copy an existing file and change its `id` (the URL becomes `/projects/<id>`); to remove one, delete the file or set `"hidden": true`. Optional blocks (`video`, `gallery`, `impact`, `servers`, `about`, `flow`, `stack`) only render when present. `kind` sets the badge: `owned`, `exclusive` or `closed`. Media can come from the CDN (`https://cdn.ghst.com.br/...`).
+- **Servers:** `servers` in `portfolio.js`. A project lists where it has run with `"servers": ["miami", ...]`. Add `offline: true` to a server that shut down: it stays listed, greyed out.
 - **Images:** use a URL or a path inside `public/` (e.g. `/servers/revoada.webp`). An empty string renders the pixel art placeholder.
-- **Stack logos:** SVGs in `src/assets/stack/<name>.svg`. Single-color logos use `currentColor` so they follow the theme.
-- **Warning flag:** set `flagged: true` on a journey stage or project and add a `flag` text in the locale files. On projects it also hides the external link.
+- **Stack logos:** SVGs in `src/assets/stack/<name>.svg`. Single-color logos use `currentColor` so they follow the theme. Tech tags find their logo by name ("Node.js" -> `nodejs.svg`); add aliases in `src/components/icons/stackIcons.js`.
+- **Warning flag:** on a journey stage, set `flagged: true` and add a `flag` text in the locale files. On a project, add a `flag` text to its JSON; it also hides the external link.
 - **Career dates:** `period: { start: '2025-08', end: '2025-12' }` on a journey stage, as `YYYY` or `YYYY-MM`. Leave `end` out for an ongoing stage. Dates are formatted per language.
 - **Start year:** `profile.startYear` feeds every `{startYear}` placeholder in the texts and the level counter.
 
