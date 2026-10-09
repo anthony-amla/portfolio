@@ -21,7 +21,7 @@ export const profile = {
 }
 
 export const contacts = [
-  { id: 'email', value: 'contatoamla@gmail.com', href: 'mailto:contatoamla@gmail.com', copyable: true },
+  { id: 'email', value: 'suporte.ghst@gmail.com', href: 'mailto:suporte.ghst@gmail.com', copyable: true },
   { id: 'discord', href: 'https://discord.com/users/170686037138341888' },
   { id: 'linkedin', value: 'in/contatoamla', href: 'https://www.linkedin.com/in/contatoamla/' },
   { id: 'github', value: 'anthony-amla', href: 'https://github.com/anthony-amla' },
