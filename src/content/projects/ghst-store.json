@@ -1,7 +1,7 @@
 {
   "$schema": "../project.schema.json",
   "id": "ghst-store",
-  "order": 2,
+  "order": 3,
   "kind": "owned",
   "flag": {
     "pt-BR": "Desativada temporariamente",

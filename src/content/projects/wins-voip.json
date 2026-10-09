@@ -1,0 +1,171 @@
+{
+  "$schema": "../project.schema.json",
+  "id": "wins-voip",
+  "order": 2,
+  "kind": "exclusive",
+  "title": "Wins VoIP",
+  "summary": {
+    "pt-BR": "Infraestrutura de voz para servidores FiveM: um servidor rust-mumble para cada cidade, com quase 3 mil jogadores falando ao mesmo tempo no horário de pico e 2,7% de CPU. Desenvolvido para a WinsVue.",
+    "en": "Voice infrastructure for FiveM servers: one rust-mumble server per city, with almost 3,000 players talking at once at peak time on 2.7% CPU. Built for WinsVue."
+  },
+  "cover": "https://cdn.ghst.com.br/projects/wins-voip/01.webp",
+  "tags": ["Rust", "pma-voice", "Docker", "Prometheus", "Grafana"],
+  "servers": ["miami", "ladoleste", "nacional", "revoada", "cpx", "sete"],
+  "gallery": [
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/01.webp",
+      "caption": {
+        "pt-BR": "Wins VoIP: a voz de todas as cidades da rede",
+        "en": "Wins VoIP: voice for every city in the network"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/02.webp",
+      "caption": {
+        "pt-BR": "Do Mumble interno ao rust-mumble dedicado por cidade",
+        "en": "From the built-in Mumble to a dedicated rust-mumble per city"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/03.webp",
+      "caption": {
+        "pt-BR": "Cada cidade conecta o pma-voice ao seu próprio servidor de voz",
+        "en": "Each city points pma-voice at its own voice server"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/04.webp",
+      "caption": {
+        "pt-BR": "Jogadores na voz por cidade ao longo de 24 horas",
+        "en": "Players on voice per city over 24 hours"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/05.webp",
+      "caption": { "pt-BR": "Tráfego de voz no horário nobre", "en": "Voice traffic at peak time" }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/06.webp",
+      "caption": { "pt-BR": "Recursos usados pela rede inteira", "en": "Resources used by the whole network" }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/wins-voip/07.webp",
+      "caption": {
+        "pt-BR": "voipctl: gerenciamento das cidades de voz",
+        "en": "voipctl: managing the voice cities"
+      }
+    }
+  ],
+  "features": {
+    "pt-BR": [
+      "Um servidor de voz rust-mumble isolado para cada cidade",
+      "Compatível com o pma-voice, sem trocar o resource das cidades",
+      "Voz fora do servidor dedicado: o jogo não divide recurso com ela",
+      "voipctl para criar, editar, reiniciar e remover cidades",
+      "Provisionamento a partir de um JSON com as cidades desejadas",
+      "Logs e detalhes por cidade",
+      "Monitoramento com Prometheus e Grafana: jogadores, banda, pacotes e host"
+    ],
+    "en": [
+      "An isolated rust-mumble voice server for every city",
+      "Works with pma-voice, no change to the cities' resources",
+      "Voice runs outside the game server, so they don't compete for resources",
+      "voipctl to create, edit, restart and remove cities",
+      "Provisioning from a JSON file listing the desired cities",
+      "Per-city logs and details",
+      "Monitoring with Prometheus and Grafana: players, bandwidth, packets and host"
+    ]
+  },
+  "about": {
+    "pt-BR": [
+      "O Mumble que vem dentro do FiveM roda no próprio servidor dedicado e começa a lagar a partir de certo número de jogadores. Ligar o pma-voice a um servidor externo melhora, mas um servidor Mumble comum também vira gargalo no horário nobre.",
+      "O Wins VoIP resolve isso com o rust-mumble, um servidor de voz em Rust feito para o pma-voice, e uma infraestrutura própria em volta dele: cada cidade da Wins tem o seu servidor de voz, em container, gerenciado pelo voipctl e monitorado no Grafana.",
+      "No horário de pico, as cidades somam 2.877 jogadores na voz ao mesmo tempo, com o Lado Leste sozinho passando de 1.300, e o host continua quase ocioso. Desenvolvido exclusivamente para a WinsVue."
+    ],
+    "en": [
+      "FiveM's built-in Mumble runs on the game server itself and starts lagging past a certain player count. Pointing pma-voice at an external server helps, but a regular Mumble server also chokes at peak time.",
+      "Wins VoIP solves this with rust-mumble, a voice server written in Rust for pma-voice, and its own infrastructure around it: every Wins city gets its own voice server in a container, managed by voipctl and monitored in Grafana.",
+      "At peak time the cities add up to 2,877 players on voice at once, with Lado Leste alone above 1,300, while the host stays nearly idle. Built exclusively for WinsVue."
+    ]
+  },
+  "impact": [
+    {
+      "value": { "pt-BR": "2.877", "en": "2,877" },
+      "label": { "pt-BR": "jogadores na voz ao mesmo tempo no pico", "en": "players on voice at once at peak" }
+    },
+    {
+      "value": "7",
+      "label": { "pt-BR": "cidades, cada uma com seu servidor", "en": "cities, each with its own server" }
+    },
+    { "value": "~100 Mb/s", "label": { "pt-BR": "de tráfego de voz no pico", "en": "of voice traffic at peak" } },
+    { "value": "~50k", "label": { "pt-BR": "pacotes por segundo no pico", "en": "packets per second at peak" } },
+    {
+      "value": { "pt-BR": "2,7%", "en": "2.7%" },
+      "label": { "pt-BR": "de CPU do host com a rede inteira", "en": "host CPU with the whole network" }
+    },
+    { "value": "~2 GB", "label": { "pt-BR": "de RAM para todas as cidades", "en": "of RAM for every city" } }
+  ],
+  "flow": [
+    {
+      "name": { "pt-BR": "Cidade", "en": "City" },
+      "tech": "pma-voice",
+      "text": {
+        "pt-BR": "O resource de voz de cada cidade aponta para o servidor de voz dela, fora do servidor dedicado.",
+        "en": "Each city's voice resource points at its own voice server, outside the game server."
+      }
+    },
+    {
+      "name": { "pt-BR": "Voz", "en": "Voice" },
+      "tech": "rust-mumble",
+      "text": {
+        "pt-BR": "Um servidor rust-mumble por cidade, em container. Se uma cidade reinicia, as outras continuam falando.",
+        "en": "One rust-mumble server per city, in a container. When one city restarts, the others keep talking."
+      }
+    },
+    {
+      "name": { "pt-BR": "Gerenciamento", "en": "Management" },
+      "tech": "voipctl",
+      "text": {
+        "pt-BR": "Cria, edita, reinicia e remove cidades, mostra os logs e provisiona tudo a partir de um JSON.",
+        "en": "Creates, edits, restarts and removes cities, shows logs and provisions everything from a JSON file."
+      }
+    },
+    {
+      "name": { "pt-BR": "Monitoramento", "en": "Monitoring" },
+      "tech": "Prometheus · Grafana",
+      "text": {
+        "pt-BR": "Jogadores por cidade, banda, pacotes por protocolo e saúde do host, atualizando a cada 10 segundos.",
+        "en": "Players per city, bandwidth, packets per protocol and host health, refreshed every 10 seconds."
+      }
+    }
+  ],
+  "stack": [
+    {
+      "name": "rust-mumble",
+      "icon": "rust",
+      "role": { "pt-BR": "Servidor de voz de cada cidade", "en": "Each city's voice server" }
+    },
+    {
+      "name": "pma-voice",
+      "role": { "pt-BR": "Resource de voz dentro do FiveM", "en": "Voice resource inside FiveM" }
+    },
+    {
+      "name": "Docker",
+      "role": {
+        "pt-BR": "Um container por cidade, mais o monitoramento",
+        "en": "One container per city, plus monitoring"
+      }
+    },
+    {
+      "name": "Prometheus",
+      "role": { "pt-BR": "Métricas de voz e do host", "en": "Voice and host metrics" }
+    },
+    {
+      "name": "Grafana",
+      "role": {
+        "pt-BR": "Dashboards de jogadores, tráfego e infraestrutura",
+        "en": "Player, traffic and infrastructure dashboards"
+      }
+    }
+  ]
+}
