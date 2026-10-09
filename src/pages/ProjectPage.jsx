@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Icon from '../components/icons/Icon'
-import StackIcon from '../components/icons/StackIcon'
+import TechLogo from '../components/icons/TechLogo'
 import ProjectCard from '../components/project/ProjectCard'
 import ServerCard from '../components/server/ServerCard'
 import { Chip, Cover, StatusFlag, TechTag, Window } from '../components/ui'
@@ -222,7 +222,7 @@ function ProjectDetails({ project }) {
                 {project.stack.map((tech) => (
                   <li key={tech.name} className="tech-card">
                     <span className="tech-logo">
-                      <StackIcon icon={tech.icon} name={tech.name} size={34} />
+                      <TechLogo icon={tech.icon} name={tech.name} size={34} />
                     </span>
                     <span>
                       <strong className="tech-name">{tech.name}</strong>

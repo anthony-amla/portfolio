@@ -23,13 +23,14 @@ const GENERIC = {
   leadership: 'users',
   arquitetura: 'blocks',
   architecture: 'blocks',
+  pmavoice: 'mic',
 }
 
 /** "Liderança" -> "lideranca", "Node.js" -> "nodejs". */
 const keyOf = (name) =>
   name
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '')
 

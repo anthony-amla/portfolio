@@ -25,6 +25,7 @@ import linkedin from 'pixelarticons/svg/linkedin.svg?raw'
 import mail from 'pixelarticons/svg/mail.svg?raw'
 import map from 'pixelarticons/svg/map.svg?raw'
 import message from 'pixelarticons/svg/message.svg?raw'
+import mic from 'pixelarticons/svg/mic.svg?raw'
 import moon from 'pixelarticons/svg/moon.svg?raw'
 import music from 'pixelarticons/svg/music.svg?raw'
 import pause from 'pixelarticons/svg/pause.svg?raw'
@@ -64,6 +65,7 @@ const ICONS = {
   mail,
   map,
   message,
+  mic,
   moon,
   music,
   pause,
