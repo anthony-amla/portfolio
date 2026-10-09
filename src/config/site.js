@@ -1,4 +1,4 @@
-/** Turnstile site key of the ghst-portfolio.pages.dev widget. Site keys are public by design. */
+/** Turnstile site key (widget allows ghst.com.br, www.ghst.com.br and ghst-portfolio.pages.dev). Site keys are public by design. */
 const PRODUCTION_TURNSTILE_SITE_KEY = '0x4AAAAAAFSAcec-kIs5FDYk'
 
 /**

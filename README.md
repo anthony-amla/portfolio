@@ -2,7 +2,7 @@
 
 Pixel art portfolio of Murilo Araujo (Ghst): an interactive isometric room drawn on canvas, day/night themes, a procedural chiptune soundtrack and Portuguese/English content.
 
-**Live:** https://ghst-portfolio.pages.dev
+**Live:** https://ghst.com.br
 
 Built with React 19, Vite 7 and Tailwind CSS 4. The site is static; the only server code is the contact form endpoint, a Cloudflare Pages Function.
 
@@ -100,7 +100,7 @@ Configure Discord, email or both. Without a verified domain, Resend only deliver
 
 Deep links such as `/projects/ghst-store` work out of the box: without a `404.html`, Pages serves `index.html` for unknown paths. `public/_headers` adds basic security headers and long caching for hashed assets.
 
-If you add a custom domain, update the absolute `og:url` and `og:image` URLs in `index.html`.
+The site is served on the custom domains `ghst.com.br` and `www.ghst.com.br` (Pages → Custom domains), with `ghst-portfolio.pages.dev` as the default Pages URL. If the domain changes, update the absolute `og:url` and `og:image` URLs in `index.html` and the Turnstile widget hostnames.
 
 ### From the terminal
 
