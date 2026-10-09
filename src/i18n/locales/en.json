@@ -24,8 +24,8 @@
     },
     "day": "Day",
     "night": "Night",
-    "switchToDay": "Switch to day theme",
-    "switchToNight": "Switch to night theme"
+    "switchToDay": "Switch to day mode",
+    "switchToNight": "Switch to night mode"
   },
   "language": {
     "label": "Language",
@@ -44,27 +44,27 @@
     "status": "Online since {startYear}",
     "aka": "aka {nick}",
     "role": "Full-stack dev · FiveM specialist",
-    "lead": "{years} years building systems for roleplay servers: Lua gameplay, React interfaces, APIs and the infrastructure that keeps it all online. A law graduate who chose code.",
+    "lead": "{years} years building for FiveM roleplay servers: gameplay in Lua, interfaces in React, APIs and the infrastructure that keeps it all running. Law graduate turned developer.",
     "primaryCta": "See my journey",
-    "secondaryCta": "Talk to me",
-    "roomHint": "Tip: click the objects in the room.",
+    "secondaryCta": "Get in touch",
+    "roomHint": "Tip: try clicking things in the room.",
     "scrollHint": "Scroll for more",
-    "scrollHintLabel": "Scroll to profile"
+    "scrollHintLabel": "Jump to profile"
   },
   "room": {
-    "label": "Pixel art room: Ghst's avatar next to a bookshelf with law books, a poster, a window and a desk with a computer.",
+    "label": "Pixel art room: Ghst's avatar next to a bookshelf full of law books, a poster, a window and a desk with a computer.",
     "speaker": "Ghst",
     "lines": [
-      "Hi! I'm Ghst. Click around the room.",
+      "Hey! I'm Ghst. Go ahead, click around.",
       "I've been building FiveM systems since {startYear}.",
       "Lua, React, Node, Go... whatever the server needs.",
-      "I have a law degree. Traded the law codes for VS Code.",
-      "Got an idea? Reach out in the contact section."
+      "Yep, I have a law degree. Swapped the law books for VS Code.",
+      "Got an idea? Hit me up in the contact section."
     ],
     "reactions": {
-      "toNight": "Good evening! Perfect time to code.",
-      "toDay": "Good morning! Coffee in hand.",
-      "plant": "This plant has survived a lot of Friday deploys."
+      "toNight": "Evening already? Prime coding hours.",
+      "toDay": "Morning! Coffee first.",
+      "plant": "This plant has survived more Friday deploys than I can count."
     },
     "objects": {
       "avatar": {
@@ -81,8 +81,8 @@
       },
       "window": {
         "label": "Window",
-        "hintDay": "Nightfall",
-        "hintNight": "Sunrise"
+        "hintDay": "Switch to night",
+        "hintNight": "Switch to day"
       },
       "desk": {
         "label": "Setup",
@@ -96,14 +96,14 @@
   },
   "about": {
     "eyebrow": "Profile",
-    "title": "Who is Ghst",
+    "title": "Meet Ghst",
     "windowTitle": "{nick}'s profile",
     "missionsTitle": "Missions",
-    "missions": ["Do good", "Make a difference", "Bring solutions"],
+    "missions": ["Do good", "Make a difference", "Solve real problems"],
     "stats": {
       "level": {
         "label": "Level",
-        "note": "years of FiveM"
+        "note": "years in FiveM"
       },
       "servers": {
         "label": "Servers",
@@ -117,31 +117,31 @@
       "education": {
         "label": "Education",
         "value": "Law",
-        "note": "bachelor's"
+        "note": "LL.B."
       }
     },
     "paragraphs": [
-      "I'm Murilo Araujo, but everyone in the community calls me Ghst. I started coding in {startYear}, writing Lua scripts for FiveM roleplay servers, and never stopped.",
-      "In-game interfaces led me to React and TypeScript. Servers led me to the back end and infrastructure. Today I work full-stack: I design the system, build the interface, write the API and take care of where it all runs.",
-      "Oh, and I hold a law degree. I studied statutes, articles and case law, but bugs, deploys and servers are where I feel at home. I traded the law codes for VS Code and have no regrets. Law didn't become my career, but it gave me a sharper eye for life."
+      "I'm Murilo Araujo, but everyone in the community knows me as Ghst. I wrote my first Lua scripts for FiveM roleplay servers in {startYear} and never looked back.",
+      "Building in-game interfaces led me to React and TypeScript; running servers pulled me into back end and infrastructure. These days I work across the whole stack: I design the system, build the UI, write the API and look after where it all runs.",
+      "Oh, and I have a law degree. I spent years with statutes and case law, but bugs, deploys and servers are where I feel at home. I swapped the law books for VS Code and never regretted it. Law didn't become my career, but it sharpened the way I see the world."
     ],
     "education": {
       "title": "Bachelor of Laws",
-      "text": "Graduated in one field, fulfilled in another."
+      "text": "Trained in one field, at home in another."
     },
     "badgesTitle": "Badges",
     "badges": {
       "since": "Since {startYear}",
       "fullstack": "Full-stack",
       "lead": "Tech Lead",
-      "store": "Own store",
+      "store": "Store founder",
       "law": "Law degree"
     }
   },
   "journey": {
     "eyebrow": "Journey",
-    "title": "Every stage, a level up",
-    "intro": "From Lua scripts on a roleplay server to leading tech for server groups. Here's the road so far.",
+    "title": "Leveling up, one stage at a time",
+    "intro": "From Lua scripts on a single roleplay server to leading tech for entire server groups. Here's how it went.",
     "levelShort": "Lv. {level}",
     "levelLabel": "Level {level}, {progress}% to the next",
     "levelBadge": "LV",
@@ -153,14 +153,14 @@
         "title": "First spawn",
         "org": "Freelance",
         "role": "FiveM consultant and developer",
-        "text": "I started writing Lua scripts for roleplay servers. It became work: freelance gigs and consulting, building systems, interfaces and integrations that run in production, with real players using them.",
+        "text": "It started with Lua scripts for roleplay servers and quickly turned into work: freelance gigs and consulting, shipping systems, interfaces and integrations that real players use in production.",
         "loot": ["Lua", "MySQL", "NUI"]
       },
       "growth": {
         "title": "From NUIs to the web",
         "org": "Growth",
         "role": "Front end, back end and infra",
-        "text": "In-game interfaces pulled me into React and TypeScript. Then came APIs with Node.js and NestJS, databases, Docker and deployment. FiveM was my gateway to full-stack.",
+        "text": "Building in-game UIs pulled me into React and TypeScript. Next came Node.js and NestJS APIs, databases, Docker and deployments. FiveM turned out to be my way into full-stack development.",
         "loot": ["React", "TypeScript", "Node.js", "NestJS", "Docker"]
       },
       "store": {
@@ -168,21 +168,21 @@
         "org": "Ghst.store",
         "role": "Founder and developer",
         "flag": "Store temporarily offline",
-        "text": "I built and run my own platform for selling FiveM scripts: catalog, automatic licenses, protected downloads, customer dashboard and Discord integration. A product from scratch to after-sales.",
+        "text": "I built and run my own marketplace for FiveM scripts: catalog, automatic licensing, protected downloads, a customer dashboard and Discord integration. The whole product, from the first line of code to after-sales support.",
         "loot": ["React", "Node.js", "MongoDB"]
       },
       "leste": {
         "title": "Technical leadership",
         "org": "LesteGroup",
         "role": "Tech Lead · Full-stack",
-        "text": "I led technology for the Fronteira Leste server group and was the sole developer of Lado Leste: architecture, systems, interfaces and day-to-day server operations.",
+        "text": "I led technology across the Fronteira Leste server group and was the sole developer behind Lado Leste: architecture, systems, interfaces and keeping the server running day to day.",
         "loot": ["Leadership", "Architecture", "Lua", "React"]
       },
       "wins": {
         "title": "Current quest",
         "org": "WinsVue",
         "role": "Full-stack developer",
-        "text": "I work on every server in WinsVue's portfolio, one of the largest companies in the FiveM ecosystem: I build systems, interfaces and integrations and keep the servers running and evolving.",
+        "text": "I work across every server in WinsVue's portfolio, one of the biggest companies in the FiveM scene: building systems, interfaces and integrations, and keeping the servers stable and growing.",
         "loot": ["Lua", "React", "Go", "ClickHouse", "Redis"]
       }
     },
@@ -191,7 +191,7 @@
   "servers": {
     "eyebrow": "Servers",
     "title": "Where my code runs",
-    "intro": "Roleplay servers where I built systems, interfaces and integrations, or kept things running.",
+    "intro": "Roleplay servers where I built systems, interfaces and integrations, or kept the lights on.",
     "via": "via {orgs}",
     "orgSeparator": " and ",
     "linkLabel": "{name} on {network} (opens in a new tab)"
@@ -199,21 +199,21 @@
   "projects": {
     "eyebrow": "Projects",
     "title": "Things I've built",
-    "intro": "Most of my work is for clients and companies, so the code stays private. Here's what I can show.",
+    "intro": "Most of my work is for clients and companies, so the code stays private. Here's what I can share.",
     "viewProject": "View project",
     "kinds": {
-      "owned": "Own product",
+      "owned": "Personal product",
       "closed": "Closed source"
     },
     "items": {
       "ghst-store": {
         "title": "Ghst.store",
-        "summary": "Platform for selling, delivering and managing FiveM scripts, with automatic licenses and a customer dashboard.",
+        "summary": "A platform to sell, deliver and manage FiveM scripts, with automatic licensing and a customer dashboard.",
         "features": [
-          "Script catalog with a page for each product",
-          "Automatic licenses with IP control and reset",
-          "Protected file downloads",
-          "Customer dashboard: download, copy license, change nickname",
+          "A dedicated page for every script in the catalog",
+          "Automatic licensing with IP binding and reset",
+          "Protected downloads",
+          "Customer dashboard: downloads, license copy and nickname changes",
           "Discord integration"
         ],
         "linkLabel": "Visit store",
@@ -221,23 +221,23 @@
       },
       "admin-panel": {
         "title": "Admin Dashboard",
-        "summary": "Real-time web dashboard to manage players, bans, logs and server settings.",
+        "summary": "Real-time web dashboard for managing players, bans, logs and server settings.",
         "features": [
-          "Player search and editing",
-          "Bans with history and reason",
-          "Server and staff action logs",
-          "Live config changes without restarting resources",
+          "Search and edit players",
+          "Bans with history and reasons",
+          "Server logs and a staff audit trail",
+          "Change settings live, no resource restart needed",
           "Real-time updates over WebSocket"
         ]
       },
       "hud-framework": {
         "title": "HUD Framework",
-        "summary": "Modular FiveM HUD: status, map, inventory and notifications, lightweight and easy to customize.",
+        "summary": "A modular FiveM HUD for status, map, inventory and notifications. Lightweight and easy to customize.",
         "features": [
-          "Configurable status: health, hunger, thirst, stress",
+          "Configurable status bars: health, hunger, thirst, stress",
           "Map, radar and zone integration",
-          "Notifications with queue and priority",
-          "Lua API for other resources to use the HUD",
+          "Queued, prioritized notifications",
+          "Lua API so other resources can drive the HUD",
           "Optimized NUI rendering"
         ]
       }
@@ -247,23 +247,23 @@
     "back": "All projects",
     "features": "What's inside",
     "stack": "Stack",
-    "others": "Other projects",
+    "others": "More projects",
     "notFound": {
       "title": "This project doesn't exist",
-      "text": "The link may be wrong or the project may have been taken down.",
+      "text": "The link may be broken, or the project is no longer online.",
       "cta": "See all projects"
     }
   },
   "notFound": {
     "eyebrow": "Error 404",
     "title": "Page not found",
-    "text": "This address doesn't exist or has moved.",
-    "cta": "Back to home"
+    "text": "This page doesn't exist or has moved.",
+    "cta": "Take me home"
   },
   "stack": {
     "eyebrow": "Stack",
     "title": "Inventory",
-    "intro": "The tools I use every day, from in-game scripts to servers in production.",
+    "intro": "The tools I reach for every day, from in-game scripts to production servers.",
     "groups": {
       "languages": "Languages",
       "frontend": "Front end",
@@ -275,7 +275,7 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's talk",
-    "intro": "A FiveM project, freelance work, a job or just an idea you want to make real. I reply by email or Discord.",
+    "intro": "Got a FiveM project, freelance work, a job opening or just an idea you'd like to bring to life? I'll get back to you by email or Discord.",
     "windowTitle": "New message",
     "fields": {
       "name": "Name",
@@ -283,11 +283,11 @@
       "subject": "Subject",
       "message": "Message"
     },
-    "subjects": ["FiveM project", "Freelance / quote", "Job / offer", "Partnership", "Other"],
+    "subjects": ["FiveM project", "Freelance / quote", "Job opportunity", "Partnership", "Something else"],
     "submit": "Send",
     "sending": "Sending...",
-    "sent": "Message sent! I'll get back to you soon.",
-    "error": "Couldn't send it right now. Reach me at",
+    "sent": "Message sent! I'll be in touch soon.",
+    "error": "Couldn't send your message right now. Reach me directly at",
     "copy": "Copy",
     "copied": "Copied",
     "channels": {
@@ -310,6 +310,6 @@
     }
   },
   "footer": {
-    "credits": "© {year} {name} · {nick}. Every pixel made with care."
+    "credits": "© {year} {name} · {nick}. Crafted with care, pixel by pixel."
   }
 }
