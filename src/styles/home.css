@@ -37,8 +37,11 @@
   }
 }
 
+/* minmax(0, …) on phones too: an auto column would grow to the room's initial
+   canvas width and the room would then measure that and never shrink. */
 .hero-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 32px;
   align-items: center;
 }
@@ -118,6 +121,7 @@
 
 .hero-room {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   gap: 8px;
   min-width: 0;
