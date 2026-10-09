@@ -1,0 +1,43 @@
+{
+  "$schema": "../project.schema.json",
+  "id": "ghst-store",
+  "order": 2,
+  "kind": "owned",
+  "flag": {
+    "pt-BR": "Desativada temporariamente",
+    "en": "Temporarily offline"
+  },
+  "title": "Ghst.store",
+  "summary": {
+    "pt-BR": "Plataforma de venda, entrega e gestão de scripts FiveM, com licenças automáticas e painel do cliente.",
+    "en": "A platform to sell, deliver and manage FiveM scripts, with automatic licensing and a customer dashboard."
+  },
+  "cover": "/projects/ghst-store/1.webp",
+  "tags": ["React", "Node.js", "Tailwind", "MongoDB"],
+  "link": {
+    "href": "https://ghst.com.br",
+    "label": { "pt-BR": "Visitar loja", "en": "Visit store" }
+  },
+  "gallery": [
+    { "src": "/projects/ghst-store/1.webp" },
+    { "src": "/projects/ghst-store/2.webp" },
+    { "src": "/projects/ghst-store/3.webp" },
+    { "src": "/projects/ghst-store/4.webp" }
+  ],
+  "features": {
+    "pt-BR": [
+      "Catálogo de scripts com página própria para cada produto",
+      "Licenças automáticas, com controle e limpeza de IP",
+      "Download protegido de arquivos",
+      "Painel do cliente: baixar, copiar licença, trocar apelido",
+      "Integração com Discord"
+    ],
+    "en": [
+      "A dedicated page for every script in the catalog",
+      "Automatic licensing with IP binding and reset",
+      "Protected downloads",
+      "Customer dashboard: downloads, license copy and nickname changes",
+      "Discord integration"
+    ]
+  }
+}

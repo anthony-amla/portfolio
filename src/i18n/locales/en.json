@@ -190,11 +190,12 @@
   },
   "servers": {
     "eyebrow": "Servers",
-    "title": "Where my code runs",
+    "title": "Where my code has been",
     "intro": "Roleplay servers where I built systems, interfaces and integrations, or kept the lights on.",
     "via": "via {orgs}",
     "orgSeparator": " and ",
-    "linkLabel": "{name} on {network} (opens in a new tab)"
+    "linkLabel": "{name} on {network} (opens in a new tab)",
+    "offline": "Offline"
   },
   "projects": {
     "eyebrow": "Projects",
@@ -203,49 +204,20 @@
     "viewProject": "View project",
     "kinds": {
       "owned": "Personal product",
+      "exclusive": "Exclusive product",
       "closed": "Closed source"
-    },
-    "items": {
-      "ghst-store": {
-        "title": "Ghst.store",
-        "summary": "A platform to sell, deliver and manage FiveM scripts, with automatic licensing and a customer dashboard.",
-        "features": [
-          "A dedicated page for every script in the catalog",
-          "Automatic licensing with IP binding and reset",
-          "Protected downloads",
-          "Customer dashboard: downloads, license copy and nickname changes",
-          "Discord integration"
-        ],
-        "linkLabel": "Visit store",
-        "flag": "Temporarily offline"
-      },
-      "admin-panel": {
-        "title": "Admin Dashboard",
-        "summary": "Real-time web dashboard for managing players, bans, logs and server settings.",
-        "features": [
-          "Search and edit players",
-          "Bans with history and reasons",
-          "Server logs and a staff audit trail",
-          "Change settings live, no resource restart needed",
-          "Real-time updates over WebSocket"
-        ]
-      },
-      "hud-framework": {
-        "title": "HUD Framework",
-        "summary": "A modular FiveM HUD for status, map, inventory and notifications. Lightweight and easy to customize.",
-        "features": [
-          "Configurable status bars: health, hunger, thirst, stress",
-          "Map, radar and zone integration",
-          "Queued, prioritized notifications",
-          "Lua API so other resources can drive the HUD",
-          "Optimized NUI rendering"
-        ]
-      }
     }
   },
   "projectPage": {
     "back": "All projects",
     "features": "What's inside",
+    "impact": "Impact",
+    "servers": "Where it runs",
+    "about": "About the project",
+    "flow": "How it works",
+    "technologies": "Technologies",
+    "video": "Showcase video",
+    "goTo": "Go to slide {n}",
     "stack": "Stack",
     "others": "More projects",
     "notFound": {

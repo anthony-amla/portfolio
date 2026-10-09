@@ -1,0 +1,258 @@
+{
+  "$schema": "../project.schema.json",
+  "id": "synora",
+  "order": 1,
+  "kind": "exclusive",
+  "title": "Synora",
+  "summary": {
+    "pt-BR": "Plataforma de logs para servidores FiveM: registra cada ação do jogo sem pesar no servidor e encontra qualquer evento em milhões de registros em menos de 1 segundo. Desenvolvido para a WinsVue.",
+    "en": "A logging platform for FiveM servers: it records every in-game action without slowing the server down and finds any event across millions of records in under a second. Built for WinsVue."
+  },
+  "cover": "https://cdn.ghst.com.br/projects/synora/panel-logs.webp",
+  "tags": ["Go", "ClickHouse", "Redis", "React", "TypeScript", "Lua"],
+  "servers": ["miami", "ladoleste", "nacional", "revoada", "cpx", "sete"],
+  "video": {
+    "src": "https://cdn.ghst.com.br/projects/synora/synora-showcase.mp4",
+    "poster": "https://cdn.ghst.com.br/projects/synora/synora-showcase-poster.webp",
+    "caption": {
+      "pt-BR": "Tour de 27 segundos pelo painel",
+      "en": "A 27-second tour of the dashboard"
+    }
+  },
+  "gallery": [
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-logs.webp",
+      "caption": {
+        "pt-BR": "Logs ao vivo: indicadores, volume por hora e um evento aberto com os metadados",
+        "en": "Live logs: key numbers, hourly volume and an event opened to show its metadata"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-search.webp",
+      "caption": {
+        "pt-BR": "Busca por #id: todos os eventos de um jogador de uma vez",
+        "en": "Search by #id: every event from one player at once"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-categories.webp",
+      "caption": {
+        "pt-BR": "Categorias organizam os identificadores de log de cada servidor",
+        "en": "Categories group each server's log identifiers"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-identifiers.webp",
+      "caption": {
+        "pt-BR": "274 identificadores e 10,5 milhões de eventos em 90 dias, em um único servidor",
+        "en": "274 identifiers and 10.5 million events in 90 days, on a single server"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-stats.webp",
+      "caption": {
+        "pt-BR": "Estatísticas de volume por hora e por categoria",
+        "en": "Volume statistics by hour and by category"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-roles.webp",
+      "caption": {
+        "pt-BR": "Cargos em hierarquia, com permissão de leitura por categoria",
+        "en": "Role hierarchy with read access granted per category"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-users.webp",
+      "caption": {
+        "pt-BR": "Equipe de cada servidor, com acesso pelo Discord",
+        "en": "Each server's team, signing in with Discord"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/panel-servers.webp",
+      "caption": {
+        "pt-BR": "Vários servidores no mesmo painel, cada um isolado",
+        "en": "Several servers in one dashboard, each one isolated"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/ingest-pipeline.webp",
+      "caption": {
+        "pt-BR": "Grafana: entrada x gravação, fila do Redis Stream e saúde do ClickHouse",
+        "en": "Grafana: ingest vs. writes, Redis Stream backlog and ClickHouse health"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/log-volume.webp",
+      "caption": {
+        "pt-BR": "Grafana: volume por servidor e atraso da coleta",
+        "en": "Grafana: volume per server and collection delay"
+      }
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/synora/machine-resources.webp",
+      "caption": {
+        "pt-BR": "Grafana: memória e CPU de cada container",
+        "en": "Grafana: memory and CPU of every container"
+      }
+    }
+  ],
+  "features": {
+    "pt-BR": [
+      "Coletor em Lua que nunca trava o servidor: fila em memória e envio em lote",
+      "Busca por #id, texto ou metadado em menos de 1 segundo",
+      "Metadados estruturados em cada evento, com JSON pronto para copiar",
+      "Categorias que organizam os identificadores de log",
+      "Cargos com permissão por categoria: cada um lê só o que precisa",
+      "Login pelo Discord e equipe separada por servidor",
+      "Links de consulta para compartilhar logs, com registro de quem viu",
+      "Vários servidores no mesmo painel, cada um isolado",
+      "Monitoramento completo com Prometheus e Grafana"
+    ],
+    "en": [
+      "A Lua collector that never stalls the server: in-memory queue and batched sends",
+      "Search by #id, text or metadata in under a second",
+      "Structured metadata on every event, with JSON ready to copy",
+      "Categories that organize log identifiers",
+      "Roles with per-category access: everyone reads only what they need",
+      "Discord sign-in and a separate team for each server",
+      "Shareable query links that record who viewed them",
+      "Several servers in one dashboard, each one isolated",
+      "Full monitoring with Prometheus and Grafana"
+    ]
+  },
+  "about": {
+    "pt-BR": [
+      "O Synora nasceu para substituir os logs por webhook do Discord e os INSERTs síncronos no MySQL, que se perdiam ou travavam com o volume da rede. Hoje ele recebe os eventos dos servidores da WinsVue e vira a base de investigação da staff: denúncias, dupes, reembolsos com prova e auditoria das próprias ações da equipe.",
+      "Desenvolvi o projeto de ponta a ponta: o coletor dentro do jogo, a ingestão, o armazenamento, a API, o painel e o monitoramento. A regra que guiou cada decisão é que log nunca pode custar desempenho ao servidor de jogo, nem se perder quando alguma peça cai.",
+      "Desenvolvido exclusivamente para a WinsVue, roda só nos servidores da rede. Por isso o código fica fechado, e as telas desta página usam dados fictícios."
+    ],
+    "en": [
+      "Synora replaced Discord webhook logs and synchronous MySQL INSERTs, which dropped events or stalled under the network's load. It now ingests events from WinsVue's servers and is the staff's investigation tool: player reports, item dupes, refunds backed by evidence and an audit trail of the team's own actions.",
+      "I built it end to end: the in-game collector, ingestion, storage, the API, the dashboard and monitoring. One rule drove every decision: logging must never cost the game server performance, and nothing can be lost when a component goes down.",
+      "Built exclusively for WinsVue, it runs only on the network's servers, so the code is private and the screens on this page use made-up data."
+    ]
+  },
+  "impact": [
+    {
+      "value": "30M+",
+      "label": { "pt-BR": "logs em menos de 90 dias", "en": "logs in under 90 days" }
+    },
+    {
+      "value": "< 1 s",
+      "label": { "pt-BR": "por busca, em milhões de registros", "en": "per search, across millions of records" }
+    },
+    {
+      "value": "6",
+      "label": { "pt-BR": "servidores da WinsVue em produção", "en": "WinsVue servers in production" }
+    },
+    {
+      "value": "~1 s",
+      "label": { "pt-BR": "do evento no jogo até o painel", "en": "from in-game event to the dashboard" }
+    },
+    {
+      "value": "1,1 GB",
+      "label": { "pt-BR": "de RAM para toda a stack", "en": "of RAM for the whole stack" }
+    },
+    {
+      "value": "274",
+      "label": { "pt-BR": "tipos de evento em um único servidor", "en": "event types on a single server" }
+    }
+  ],
+  "flow": [
+    {
+      "name": { "pt-BR": "Coleta", "en": "Collect" },
+      "tech": "Lua",
+      "text": {
+        "pt-BR": "O resource no FiveM coloca cada evento numa fila em memória e devolve o controle na hora. Um loop separado envia em lote.",
+        "en": "The FiveM resource drops each event into an in-memory queue and returns right away. A separate loop sends them in batches."
+      }
+    },
+    {
+      "name": { "pt-BR": "Ingestão", "en": "Ingest" },
+      "tech": "Go",
+      "text": {
+        "pt-BR": "Valida a chave do servidor, carimba o horário e empurra o lote para a fila. Se a fila enche, responde para o coletor segurar o envio, em vez de estourar a memória.",
+        "en": "Checks the server key, stamps the time and pushes the batch onto the queue. When the queue fills up it tells the collector to hold off instead of running out of memory."
+      }
+    },
+    {
+      "name": { "pt-BR": "Fila", "en": "Queue" },
+      "tech": "Redis Streams",
+      "text": {
+        "pt-BR": "Absorve os picos de horário nobre. Um grupo de writers consome em paralelo, e escalar é só subir mais réplicas.",
+        "en": "Soaks up prime-time spikes. A consumer group of writers reads in parallel, and scaling is just adding replicas."
+      }
+    },
+    {
+      "name": { "pt-BR": "Armazenamento", "en": "Store" },
+      "tech": "ClickHouse",
+      "text": {
+        "pt-BR": "Os writers gravam em lote e só confirmam a mensagem depois do insert: se o banco cai, o log espera em vez de sumir. O banco colunar comprime tudo e responde buscas em milissegundos.",
+        "en": "Writers insert in batches and acknowledge only after the write, so if the database goes down logs wait instead of vanishing. The columnar engine compresses everything and answers searches in milliseconds."
+      }
+    },
+    {
+      "name": { "pt-BR": "Painel", "en": "Dashboard" },
+      "tech": "Fastify · React",
+      "text": {
+        "pt-BR": "A API confere no PostgreSQL o que cada cargo pode ver e busca no ClickHouse. O painel mostra tudo atualizando em tempo real.",
+        "en": "The API checks in PostgreSQL what each role may see, then queries ClickHouse. The dashboard shows it all updating in real time."
+      }
+    }
+  ],
+  "stack": [
+    {
+      "name": "Lua",
+      "role": { "pt-BR": "Coletor dentro do servidor FiveM", "en": "Collector inside the FiveM server" }
+    },
+    {
+      "name": "Go",
+      "role": { "pt-BR": "API de ingestão e writers", "en": "Ingest API and writers" }
+    },
+    {
+      "name": "Redis",
+      "role": { "pt-BR": "Fila com Redis Streams e backpressure", "en": "Redis Streams queue with backpressure" }
+    },
+    {
+      "name": "ClickHouse",
+      "role": { "pt-BR": "Armazenamento colunar dos logs", "en": "Columnar log storage" }
+    },
+    {
+      "name": "PostgreSQL",
+      "role": { "pt-BR": "Usuários, cargos, servidores e chaves", "en": "Users, roles, servers and keys" }
+    },
+    {
+      "name": "Fastify",
+      "role": {
+        "pt-BR": "API do painel, login com Discord e permissões",
+        "en": "Dashboard API, Discord sign-in and permissions"
+      }
+    },
+    {
+      "name": "TypeScript",
+      "role": { "pt-BR": "API e painel tipados de ponta a ponta", "en": "Typed API and dashboard, end to end" }
+    },
+    {
+      "name": "React",
+      "role": { "pt-BR": "Painel web com atualização ao vivo", "en": "Web dashboard with live updates" }
+    },
+    {
+      "name": "Vite",
+      "role": { "pt-BR": "Build do painel", "en": "Dashboard build" }
+    },
+    {
+      "name": "Docker",
+      "role": { "pt-BR": "Toda a stack em Docker Compose", "en": "The whole stack on Docker Compose" }
+    },
+    {
+      "name": "Prometheus",
+      "role": { "pt-BR": "Métricas de cada serviço", "en": "Metrics from every service" }
+    },
+    {
+      "name": "Grafana",
+      "role": { "pt-BR": "Dashboards de saúde e volume", "en": "Health and volume dashboards" }
+    }
+  ]
+}

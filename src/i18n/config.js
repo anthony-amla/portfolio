@@ -23,6 +23,21 @@ function interpolate(value, vars) {
 }
 
 /**
+ * Resolves a localized value from content files: either a plain value shared
+ * by every language, or an object keyed by locale (`{ "pt-BR": ..., "en": ... }`).
+ * Missing locales fall back to the default one.
+ *
+ * @param {unknown} value
+ * @param {keyof typeof LOCALES} locale
+ */
+export function localize(value, locale) {
+  if (value && typeof value === 'object' && !Array.isArray(value) && DEFAULT_LOCALE in value) {
+    return value[locale] ?? value[DEFAULT_LOCALE]
+  }
+  return value
+}
+
+/**
  * Builds a translate function for a locale. Missing keys fall back to the
  * default locale, then to the key itself so gaps are visible.
  *

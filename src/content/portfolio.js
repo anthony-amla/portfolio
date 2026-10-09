@@ -1,6 +1,7 @@
 /**
  * Language-independent portfolio data: ids, links, images and relations.
  * Every visible text lives in src/i18n/locales/*.json, keyed by the ids below.
+ * Projects are self-contained JSON files in ./projects (data and text together).
  *
  * Images accept a URL or a path inside /public (e.g. '/servers/revoada.webp').
  * An empty string renders the pixel art placeholder.
@@ -35,7 +36,10 @@ export const NETWORKS = {
 
 const instagram = (handle) => ({ network: 'instagram', href: `https://instagram.com/${handle}` })
 
-/** Roleplay servers ("cidades"). `link` is `{ network, href }` or null. */
+/**
+ * Roleplay servers ("cidades"). `link` is `{ network, href }` or null.
+ * Add `offline: true` when a server shuts down: it stays listed, greyed out.
+ */
 export const servers = [
   { id: 'revoada', name: 'Revoada RJ', link: instagram('joguerevoada'), image: '/servers/revoada.webp' },
   { id: 'central', name: 'Central RP', link: instagram('centralrp'), image: '/servers/central.webp' },
@@ -66,35 +70,6 @@ export const journey = [
     current: true,
     period: { start: '2025-12' },
     servers: ['revoada', 'central', 'nacional', 'ladoleste', 'miami', 'sete', 'cpx'],
-  },
-]
-
-/**
- * Text: `projects.items.<id>`. While `flagged` is true the external link is
- * hidden and the warning flag is shown.
- */
-export const projects = [
-  {
-    id: 'ghst-store',
-    owned: true,
-    flagged: true,
-    tags: ['React', 'Node.js', 'Tailwind', 'MongoDB'],
-    images: [1, 2, 3, 4].map((n) => `/projects/ghst-store/${n}.webp`),
-    link: 'https://ghst.com.br',
-  },
-  {
-    id: 'admin-panel',
-    owned: false,
-    tags: ['React', 'Node.js', 'WebSocket', 'Lua'],
-    images: [],
-    link: null,
-  },
-  {
-    id: 'hud-framework',
-    owned: false,
-    tags: ['Lua', 'NUI', 'React'],
-    images: [],
-    link: null,
   },
 ]
 

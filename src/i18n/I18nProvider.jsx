@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { STORAGE_KEYS } from '../config/site'
 import { readStorage, writeStorage } from '../lib/storage'
-import { DEFAULT_LOCALE, LOCALES, createTranslator, isLocale } from './config'
+import { DEFAULT_LOCALE, LOCALES, createTranslator, isLocale, localize } from './config'
 import { I18nContext } from './context'
 
 function initialLocale() {
@@ -19,13 +19,14 @@ export default function I18nProvider({ children }) {
   }, [])
 
   const t = useMemo(() => createTranslator(locale), [locale])
+  const l = useCallback((value) => localize(value, locale), [locale])
 
   useEffect(() => {
     document.documentElement.lang = LOCALES[locale].htmlLang
     document.querySelector('meta[name="description"]')?.setAttribute('content', t('meta.description'))
   }, [locale, t])
 
-  const value = useMemo(() => ({ locale, setLocale, t }), [locale, setLocale, t])
+  const value = useMemo(() => ({ locale, setLocale, t, l }), [locale, setLocale, t, l])
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>
 }

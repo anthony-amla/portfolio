@@ -190,11 +190,12 @@
   },
   "servers": {
     "eyebrow": "Servidores",
-    "title": "Onde meu código roda",
+    "title": "Onde meu código esteve presente",
     "intro": "Servidores de roleplay em que criei sistemas, interfaces e integrações, ou cuidei da sustentação.",
     "via": "via {orgs}",
     "orgSeparator": " e ",
-    "linkLabel": "{name} no {network} (abre em nova aba)"
+    "linkLabel": "{name} no {network} (abre em nova aba)",
+    "offline": "Fora do ar"
   },
   "projects": {
     "eyebrow": "Projetos",
@@ -203,49 +204,20 @@
     "viewProject": "Ver projeto",
     "kinds": {
       "owned": "Produto próprio",
+      "exclusive": "Produto exclusivo",
       "closed": "Código fechado"
-    },
-    "items": {
-      "ghst-store": {
-        "title": "Ghst.store",
-        "summary": "Plataforma de venda, entrega e gestão de scripts FiveM, com licenças automáticas e painel do cliente.",
-        "features": [
-          "Catálogo de scripts com página própria para cada produto",
-          "Licenças automáticas, com controle e limpeza de IP",
-          "Download protegido de arquivos",
-          "Painel do cliente: baixar, copiar licença, trocar apelido",
-          "Integração com Discord"
-        ],
-        "linkLabel": "Visitar loja",
-        "flag": "Desativada temporariamente"
-      },
-      "admin-panel": {
-        "title": "Painel Administrativo",
-        "summary": "Dashboard web em tempo real para administrar jogadores, bans, logs e configurações do servidor.",
-        "features": [
-          "Busca e edição de jogadores",
-          "Bans com histórico e motivo",
-          "Logs do servidor e das ações da staff",
-          "Ajuste de configurações ao vivo, sem reiniciar recurso",
-          "Atualizações em tempo real via WebSocket"
-        ]
-      },
-      "hud-framework": {
-        "title": "Framework de HUD",
-        "summary": "HUD modular para FiveM: status, mapa, inventário e notificações, leve e fácil de personalizar.",
-        "features": [
-          "Status configuráveis: vida, fome, sede, stress",
-          "Integração com mapa, radar e zonas",
-          "Notificações com fila e prioridade",
-          "API em Lua para outros recursos usarem o HUD",
-          "Renderização otimizada na NUI"
-        ]
-      }
     }
   },
   "projectPage": {
     "back": "Todos os projetos",
     "features": "O que tem",
+    "impact": "Impacto",
+    "servers": "Onde o sistema roda",
+    "about": "Sobre o projeto",
+    "flow": "Como funciona",
+    "technologies": "Tecnologias",
+    "video": "Vídeo de apresentação",
+    "goTo": "Ir para o slide {n}",
     "stack": "Stack",
     "others": "Outros projetos",
     "notFound": {

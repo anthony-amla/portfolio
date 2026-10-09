@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portfolio project",
+  "description": "One file per project in src/content/projects/. Text fields accept a plain value (same in every language) or an object keyed by locale.",
+  "type": "object",
+  "required": ["id", "order", "kind", "title", "summary", "cover", "tags"],
+  "additionalProperties": false,
+  "definitions": {
+    "text": {
+      "description": "A string, or { \"pt-BR\": string, \"en\": string }.",
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "required": ["pt-BR"],
+          "properties": { "pt-BR": { "type": "string" }, "en": { "type": "string" } },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "textList": {
+      "description": "A list of strings, or { \"pt-BR\": string[], \"en\": string[] }.",
+      "oneOf": [
+        { "type": "array", "items": { "type": "string" } },
+        {
+          "type": "object",
+          "required": ["pt-BR"],
+          "properties": {
+            "pt-BR": { "type": "array", "items": { "type": "string" } },
+            "en": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "media": {
+      "description": "Absolute URL (e.g. https://cdn.ghst.com.br/...) or a path inside public/.",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": {
+      "description": "URL slug (/projects/<id>). Must match the file name.",
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "order": { "description": "Position in the list, lowest first.", "type": "number" },
+    "hidden": { "description": "Keeps the file but hides the project.", "type": "boolean" },
+    "kind": {
+      "description": "Badge on the card and page. owned: personal product; exclusive: built exclusively for a company; closed: client work.",
+      "enum": ["owned", "exclusive", "closed"]
+    },
+    "kindLabel": { "description": "Overrides the default badge text for this project.", "$ref": "#/definitions/text" },
+    "flag": { "description": "Red warning flag. Also hides the external link.", "$ref": "#/definitions/text" },
+    "title": { "$ref": "#/definitions/text" },
+    "summary": {
+      "description": "One or two sentences, shown on the card and under the title.",
+      "$ref": "#/definitions/text"
+    },
+    "cover": { "description": "Card image.", "$ref": "#/definitions/media" },
+    "tags": { "description": "Short tech list shown on the card.", "type": "array", "items": { "type": "string" } },
+    "link": {
+      "type": "object",
+      "required": ["href", "label"],
+      "properties": { "href": { "type": "string" }, "label": { "$ref": "#/definitions/text" } },
+      "additionalProperties": false
+    },
+    "video": {
+      "description": "Shown as the first slide of the gallery.",
+      "type": "object",
+      "required": ["src"],
+      "properties": {
+        "src": { "$ref": "#/definitions/media" },
+        "poster": { "$ref": "#/definitions/media" },
+        "caption": { "$ref": "#/definitions/text" }
+      },
+      "additionalProperties": false
+    },
+    "gallery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["src"],
+        "properties": { "src": { "$ref": "#/definitions/media" }, "caption": { "$ref": "#/definitions/text" } },
+        "additionalProperties": false
+      }
+    },
+    "features": { "description": "Bullet list in the side panel.", "$ref": "#/definitions/textList" },
+    "about": { "description": "Paragraphs of the 'About the project' section.", "$ref": "#/definitions/textList" },
+    "impact": {
+      "description": "Highlighted numbers.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["value", "label"],
+        "properties": { "value": { "$ref": "#/definitions/text" }, "label": { "$ref": "#/definitions/text" } },
+        "additionalProperties": false
+      }
+    },
+    "servers": {
+      "description": "Where the code has run: server ids from `servers` in src/content/portfolio.js (logo, name and link come from there).",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "flow": {
+      "description": "Ordered steps of 'How it works'.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "text"],
+        "properties": {
+          "name": { "$ref": "#/definitions/text" },
+          "tech": { "type": "string" },
+          "text": { "$ref": "#/definitions/text" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "stack": {
+      "description": "Technologies with the role each one plays. icon = file name in src/assets/stack (optional).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "role"],
+        "properties": {
+          "name": { "type": "string" },
+          "icon": { "type": "string" },
+          "role": { "$ref": "#/definitions/text" }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

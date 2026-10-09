@@ -1,7 +1,7 @@
 import ProjectCard from '../components/project/ProjectCard'
 import { Section } from '../components/ui'
 import { SECTION } from '../config/site'
-import { projects } from '../content/portfolio'
+import { projects } from '../content/projects'
 import { reveal } from '../hooks/useReveal'
 import { useI18n } from '../i18n/context'
 
