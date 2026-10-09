@@ -92,7 +92,7 @@ Configure Discord, email or both. Without a verified domain, Resend only deliver
 1. Push this project to a GitHub repository.
 2. In Cloudflare: **Workers & Pages → Create → Pages → Connect to Git**, then pick the repository.
 3. Build settings: framework preset `Vite`, build command `npm run build`, output directory `dist`. The Node version comes from `.nvmrc`.
-4. Under **Settings → Variables and Secrets**, add the contact form variables above for Production (and Preview if you use branch previews).
+4. Plain variables (`CONTACT_EMAIL_TO`, `CONTACT_EMAIL_FROM`) live in `wrangler.toml` under `[vars]`; Pages reads them from there. Add the secrets (`DISCORD_WEBHOOK_URL`, `RESEND_API_KEY`, `TURNSTILE_SECRET_KEY`) under **Settings → Variables and Secrets**.
 5. Redeploy once after adding variables; they apply from the next deployment on.
 6. Every `git push` publishes a new version.
 
