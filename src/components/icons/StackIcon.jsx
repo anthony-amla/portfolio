@@ -1,19 +1,16 @@
-const SOURCES = import.meta.glob('../../assets/stack/*.svg', { query: '?raw', import: 'default', eager: true })
-
-const SVG_BY_NAME = Object.fromEntries(
-  Object.entries(SOURCES).map(([path, svg]) => [path.split('/').pop().replace('.svg', ''), svg]),
-)
+import { SVG_BY_NAME, stackIconFor } from './stackIcons'
 
 /**
  * Technology logo (devicon, MIT) inlined as SVG. Single-color logos use
  * `currentColor` and follow the theme.
  *
  * @param {object} props
- * @param {string} props.icon File name in src/assets/stack, without extension.
+ * @param {string} [props.icon] File name in src/assets/stack, without extension.
+ * @param {string} [props.name] Technology name, used to find the logo when `icon` is not set.
  * @param {number} [props.size=40] Size in px.
  */
-export default function StackIcon({ icon, size = 40 }) {
-  const svg = SVG_BY_NAME[icon]
+export default function StackIcon({ icon, name, size = 40 }) {
+  const svg = SVG_BY_NAME[icon ?? (name && stackIconFor(name))]
   if (!svg) return null
 
   return (

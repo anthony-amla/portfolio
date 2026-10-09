@@ -1,4 +1,4 @@
-import { Chip, Section, StatusFlag } from '../components/ui'
+import { Chip, Section, StatusFlag, TechTag } from '../components/ui'
 import { SECTION } from '../config/site'
 import { journey, profile, servers } from '../content/portfolio'
 import { reveal } from '../hooks/useReveal'
@@ -56,7 +56,7 @@ function Quest({ stage }) {
         <div className="quest-loot">
           <span className="loot-label">{t('journey.loot')}</span>
           {text('loot').map((item) => (
-            <Chip key={item}>{item}</Chip>
+            <TechTag key={item} name={item} tone="default" />
           ))}
         </div>
 

@@ -121,6 +121,18 @@
   border-color: var(--line);
 }
 
+.chip-green {
+  background: var(--btn);
+  color: #fff;
+  border-color: var(--line);
+}
+
+/* Tech logos inside chips: single-color ones take the chip text color. */
+.chip .stack-icon {
+  flex-shrink: 0;
+  color: currentColor;
+}
+
 .chip-red {
   background: var(--danger-strong);
   color: #fff;
