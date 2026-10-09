@@ -14,16 +14,20 @@ function lookup(messages, key) {
   return key.split('.').reduce((node, part) => (node == null ? undefined : node[part]), messages)
 }
 
-function interpolate(text, vars) {
-  return text.replace(/\{(\w+)\}/g, (match, name) => (name in vars ? String(vars[name]) : match))
+function interpolate(value, vars) {
+  if (typeof value === 'string') {
+    return value.replace(/\{(\w+)\}/g, (match, name) => (name in vars ? String(vars[name]) : match))
+  }
+  if (Array.isArray(value)) return value.map((item) => interpolate(item, vars))
+  return value
 }
 
 /**
  * Builds a translate function for a locale. Missing keys fall back to the
  * default locale, then to the key itself so gaps are visible.
  *
- * Strings get `{name}` placeholders replaced from `vars`; arrays and objects
- * are returned as-is.
+ * `{name}` placeholders are replaced from `vars` in strings and in arrays of
+ * strings; objects are returned as-is.
  *
  * @param {keyof typeof LOCALES} locale
  * @returns {(key: string, vars?: Record<string, string | number>) => any}
@@ -35,6 +39,6 @@ export function createTranslator(locale) {
   return (key, vars = {}) => {
     const value = lookup(messages, key) ?? lookup(fallback, key)
     if (value == null) return key
-    return typeof value === 'string' ? interpolate(value, vars) : value
+    return interpolate(value, vars)
   }
 }

@@ -60,7 +60,7 @@ export default function AboutSection() {
               </dl>
 
               <div className="prose">
-                {t('about.paragraphs').map((paragraph, index) => (
+                {t('about.paragraphs', { startYear: profile.startYear }).map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </div>
@@ -80,7 +80,7 @@ export default function AboutSection() {
                     <span className="badge-icon">
                       <Icon name={badge.icon} size={20} />
                     </span>
-                    {t(`about.badges.${badge.id}`)}
+                    {t(`about.badges.${badge.id}`, { startYear: profile.startYear })}
                   </li>
                 ))}
               </ul>

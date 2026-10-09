@@ -1,7 +1,7 @@
 import Icon from '../components/icons/Icon'
 import { Cover, Section } from '../components/ui'
 import { SECTION } from '../config/site'
-import { journey, servers } from '../content/portfolio'
+import { NETWORKS, journey, servers } from '../content/portfolio'
 import { reveal } from '../hooks/useReveal'
 import { useI18n } from '../i18n/context'
 
@@ -9,7 +9,7 @@ import { useI18n } from '../i18n/context'
 const stagesForServer = (serverId) =>
   journey.filter((stage) => stage.servers.includes(serverId)).map((stage) => stage.id)
 
-/** @param {{ server: { id: string, name: string, href: string, image: string } }} props */
+/** @param {{ server: { id: string, name: string, link: { network: string, href: string } | null, image: string } }} props */
 function ServerCard({ server }) {
   const { t } = useI18n()
   const orgs = [...new Set(stagesForServer(server.id).map((id) => t(`journey.items.${id}.org`)))]
@@ -21,19 +21,19 @@ function ServerCard({ server }) {
         <p className="server-name">{server.name}</p>
         <p className="server-via">{t('servers.via', { orgs: orgs.join(t('servers.orgSeparator')) })}</p>
       </div>
-      {server.href && <Icon name="instagram" size={18} className="server-link-icon" />}
+      {server.link && <Icon name={server.link.network} size={18} className="server-link-icon" />}
     </>
   )
 
-  if (!server.href) return <div className="server-card">{content}</div>
+  if (!server.link) return <div className="server-card">{content}</div>
 
   return (
     <a
       className="server-card"
-      href={server.href}
+      href={server.link.href}
       target="_blank"
       rel="noreferrer"
-      aria-label={t('servers.instagramLabel', { name: server.name })}
+      aria-label={t('servers.linkLabel', { name: server.name, network: NETWORKS[server.link.network] })}
     >
       {content}
     </a>

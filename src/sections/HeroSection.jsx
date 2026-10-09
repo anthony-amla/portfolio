@@ -19,7 +19,7 @@ export default function HeroSection({ theme, onToggleTheme }) {
       <div className="container hero-grid">
         <div className="hero-copy">
           <p className="status" {...reveal(0)}>
-            <span className="status-dot" aria-hidden /> {t('hero.status', { year: profile.startYear })}
+            <span className="status-dot" aria-hidden /> {t('hero.status', { startYear: profile.startYear })}
           </p>
           <h1 id="hero-title" className="hero-title" {...reveal(1)}>
             {profile.name}

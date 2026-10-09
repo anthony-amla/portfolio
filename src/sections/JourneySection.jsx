@@ -3,7 +3,7 @@ import { SECTION } from '../config/site'
 import { journey, profile, servers } from '../content/portfolio'
 import { reveal } from '../hooks/useReveal'
 import { useI18n } from '../i18n/context'
-import { currentYear, yearProgress, yearsSince } from '../lib/date'
+import { currentYear, formatPeriod, yearProgress, yearsSince } from '../lib/date'
 
 const serverName = (id) => servers.find((server) => server.id === id)?.name ?? id
 
@@ -25,11 +25,13 @@ function ExperienceBar() {
   )
 }
 
-/** @param {{ stage: { id: string, level: number, current?: boolean, flagged?: boolean, servers: string[] } }} props */
+/**
+ * @param {{ stage: { id: string, level: number, period?: { start: string, end?: string }, current?: boolean, flagged?: boolean, servers: string[] } }} props
+ */
 function Quest({ stage }) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const text = (key) => t(`journey.items.${stage.id}.${key}`)
-  const period = text('period')
+  const period = formatPeriod(stage.period, locale, t('journey.present'))
   const classes = ['quest', stage.current && 'quest-current', stage.flagged && 'quest-flagged'].filter(Boolean)
 
   return (

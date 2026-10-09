@@ -41,7 +41,7 @@
     "pause": "Pausar trilha sonora"
   },
   "hero": {
-    "status": "Online desde {year}",
+    "status": "Online desde {startYear}",
     "aka": "aka {nick}",
     "role": "Dev full-stack · Especialista em FiveM",
     "lead": "{years} anos construindo sistemas para servidores de roleplay: gameplay em Lua, interfaces em React, APIs e a infraestrutura que mantém tudo no ar. Bacharel em Direito que escolheu o código.",
@@ -56,7 +56,7 @@
     "speaker": "Ghst",
     "lines": [
       "Oi! Eu sou o Ghst. Clica nas coisas do quarto.",
-      "Faço sistemas para FiveM desde 2019.",
+      "Faço sistemas para FiveM desde {startYear}.",
       "Lua, React, Node, Go... o que o servidor precisar.",
       "Sou bacharel em Direito. Troquei o Vade Mecum pelo VS Code.",
       "Tem uma ideia? Me chama lá no contato."
@@ -67,12 +67,31 @@
       "plant": "Essa planta já sobreviveu a muito deploy de sexta-feira."
     },
     "objects": {
-      "avatar": { "label": "Ghst", "hint": "Dizer oi" },
-      "shelf": { "label": "Estante", "hint": "Bacharel em Direito" },
-      "poster": { "label": "Pôster", "hint": "Servidores" },
-      "window": { "label": "Janela", "hintDay": "Anoitecer", "hintNight": "Amanhecer" },
-      "desk": { "label": "Setup", "hint": "Ver projetos" },
-      "plant": { "label": "Planta", "hint": "Só uma planta" }
+      "avatar": {
+        "label": "Ghst",
+        "hint": "Dizer oi"
+      },
+      "shelf": {
+        "label": "Estante",
+        "hint": "Bacharel em Direito"
+      },
+      "poster": {
+        "label": "Pôster",
+        "hint": "Servidores"
+      },
+      "window": {
+        "label": "Janela",
+        "hintDay": "Anoitecer",
+        "hintNight": "Amanhecer"
+      },
+      "desk": {
+        "label": "Setup",
+        "hint": "Ver projetos"
+      },
+      "plant": {
+        "label": "Planta",
+        "hint": "Só uma planta"
+      }
     }
   },
   "about": {
@@ -82,13 +101,27 @@
     "missionsTitle": "Missões",
     "missions": ["Fazer o bem", "Ser a diferença", "Trazer soluções"],
     "stats": {
-      "level": { "label": "Nível", "note": "anos de FiveM" },
-      "servers": { "label": "Servidores", "note": "atendidos" },
-      "class": { "label": "Classe", "value": "Full-stack", "note": "Lua · TS · Go" },
-      "education": { "label": "Formação", "value": "Direito", "note": "bacharel" }
+      "level": {
+        "label": "Nível",
+        "note": "anos de FiveM"
+      },
+      "servers": {
+        "label": "Servidores",
+        "note": "atendidos"
+      },
+      "class": {
+        "label": "Classe",
+        "value": "Full-stack",
+        "note": "Lua · TS · Go"
+      },
+      "education": {
+        "label": "Formação",
+        "value": "Direito",
+        "note": "bacharel"
+      }
     },
     "paragraphs": [
-      "Sou Murilo Araujo, mas na comunidade todo mundo me chama de Ghst. Comecei a programar em 2019 escrevendo scripts em Lua para servidores de roleplay no FiveM e nunca mais parei.",
+      "Sou Murilo Araujo, mas na comunidade todo mundo me chama de Ghst. Comecei a programar em {startYear} escrevendo scripts em Lua para servidores de roleplay no FiveM e nunca mais parei.",
       "As interfaces dentro do jogo me levaram ao React e ao TypeScript. Os servidores me levaram ao backend e à infraestrutura. Hoje trabalho como full-stack: penso o sistema, construo a interface, escrevo a API e cuido de onde tudo isso roda.",
       "Ah, e eu sou bacharel em Direito. Estudei leis, artigos e jurisprudência, mas é entre bugs, deploys e servidores que eu me encontro. Troquei o Vade Mecum pelo VS Code e não me arrependo. O Direito não virou profissão, mas me deixou um olhar mais aguçado para a vida."
     ],
@@ -98,7 +131,7 @@
     },
     "badgesTitle": "Emblemas",
     "badges": {
-      "since": "Desde 2019",
+      "since": "Desde {startYear}",
       "fullstack": "Full-stack",
       "lead": "Tech Lead",
       "store": "Loja própria",
@@ -120,7 +153,6 @@
         "title": "Primeiro spawn",
         "org": "Freelance",
         "role": "Consultor e desenvolvedor FiveM",
-        "period": "2019 — atual",
         "text": "Comecei escrevendo scripts em Lua para servidores de roleplay. Virou trabalho: freelas e consultorias criando sistemas, interfaces e integrações que rodam em produção, com jogador real usando.",
         "loot": ["Lua", "MySQL", "NUI"]
       },
@@ -128,7 +160,6 @@
         "title": "Das NUIs para a web",
         "org": "Evolução",
         "role": "Front-end, back-end e infra",
-        "period": "",
         "text": "As interfaces dentro do jogo me puxaram para React e TypeScript. Depois vieram as APIs em Node.js e NestJS, os bancos de dados, o Docker e o deploy. O FiveM foi a porta de entrada para o full-stack.",
         "loot": ["React", "TypeScript", "Node.js", "NestJS", "Docker"]
       },
@@ -136,7 +167,6 @@
         "title": "Loja própria",
         "org": "Ghst.store",
         "role": "Fundador e desenvolvedor",
-        "period": "",
         "flag": "Loja desativada temporariamente",
         "text": "Criei e mantenho minha própria plataforma de venda de scripts FiveM: catálogo, licenças automáticas, download protegido, painel do cliente e integração com Discord. Produto do zero ao pós-venda.",
         "loot": ["React", "Node.js", "MongoDB"]
@@ -145,7 +175,6 @@
         "title": "Liderança técnica",
         "org": "LesteGroup",
         "role": "Tech Lead · Full-stack",
-        "period": "Ago 2025 — Dez 2025",
         "text": "Liderei a tecnologia do grupo de servidores da Fronteira Leste e fui o desenvolvedor integral do Lado Leste: arquitetura, sistemas, interfaces e sustentação do servidor no dia a dia.",
         "loot": ["Liderança", "Arquitetura", "Lua", "React"]
       },
@@ -153,11 +182,11 @@
         "title": "Missão atual",
         "org": "WinsVue",
         "role": "Desenvolvedor full-stack",
-        "period": "Dez 2025 — atual",
         "text": "Trabalho em todos os servidores do portfólio da WinsVue, uma das maiores empresas do ecossistema FiveM: crio sistemas, interfaces e integrações e cuido da sustentação e evolução dos servidores.",
         "loot": ["Lua", "React", "Go", "ClickHouse", "Redis"]
       }
-    }
+    },
+    "present": "atual"
   },
   "servers": {
     "eyebrow": "Servidores",
@@ -165,7 +194,7 @@
     "intro": "Servidores de roleplay em que criei sistemas, interfaces e integrações, ou cuidei da sustentação.",
     "via": "via {orgs}",
     "orgSeparator": " e ",
-    "instagramLabel": "{name} no Instagram (abre em nova aba)"
+    "linkLabel": "{name} no {network} (abre em nova aba)"
   },
   "projects": {
     "eyebrow": "Projetos",
@@ -263,11 +292,22 @@
     "copy": "Copiar",
     "copied": "Copiado",
     "channels": {
-      "email": { "label": "E-mail" },
-      "discord": { "label": "Discord", "value": "Abrir perfil" },
-      "linkedin": { "label": "LinkedIn" },
-      "github": { "label": "GitHub" },
-      "instagram": { "label": "Instagram" }
+      "email": {
+        "label": "E-mail"
+      },
+      "discord": {
+        "label": "Discord",
+        "value": "Abrir perfil"
+      },
+      "linkedin": {
+        "label": "LinkedIn"
+      },
+      "github": {
+        "label": "GitHub"
+      },
+      "instagram": {
+        "label": "Instagram"
+      }
     }
   },
   "footer": {

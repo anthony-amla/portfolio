@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { SECTION } from '../../config/site'
+import { profile } from '../../content/portfolio'
 import { useI18n } from '../../i18n/context'
 import { AVATAR_HEAD, HOTSPOTS, ROOM_H, ROOM_W, drawRoom } from './scene'
 
@@ -46,7 +47,7 @@ export default function Room({ theme, onToggleTheme }) {
   // Incremented on every new speech to restart the bubble animation.
   const [speechId, setSpeechId] = useState(0)
 
-  const lines = t('room.lines')
+  const lines = t('room.lines', { startYear: profile.startYear })
 
   const draw = useCallback(() => {
     const ctx = canvasRef.current?.getContext('2d')
