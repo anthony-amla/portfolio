@@ -2,6 +2,8 @@
 
 Pixel art portfolio of Murilo Araujo (Ghst): an interactive isometric room drawn on canvas, day/night themes, a procedural chiptune soundtrack and Portuguese/English content.
 
+**Live:** https://ghst-portfolio.pages.dev
+
 Built with React 19, Vite 7 and Tailwind CSS 4. The site is static; the only server code is the contact form endpoint, a Cloudflare Pages Function.
 
 ## Getting started
