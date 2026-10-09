@@ -18,7 +18,7 @@ function shortMonth(date, locale) {
  * @param {string} value
  * @param {string} locale
  */
-export function formatMonthYear(value, locale) {
+function formatMonthYear(value, locale) {
   const [year, month] = value.split('-').map(Number)
   if (!month) return String(year)
   return `${shortMonth(new Date(Date.UTC(year, month - 1, 1)), locale)} ${year}`

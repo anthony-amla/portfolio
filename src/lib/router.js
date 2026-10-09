@@ -31,7 +31,7 @@ export function matchRoute(path) {
   return { name: 'notFound' }
 }
 
-export function navigate(href) {
+function navigate(href) {
   history.pushState(null, '', href)
   listeners.forEach((notify) => notify())
 }
