@@ -20,6 +20,7 @@
       "servers": "Servers",
       "projects": "Projects",
       "stack": "Stack",
+      "testimonials": "Reviews",
       "contact": "Contact"
     },
     "day": "Day",
@@ -243,6 +244,22 @@
       "data": "Data",
       "infra": "Infra"
     }
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What people say",
+    "intro": "Managers, clients and coworkers on what it was like to work with me.",
+    "rating": "{n} out of 5 stars",
+    "slide": "Testimonial {n} of {total}",
+    "previous": "Previous testimonial",
+    "next": "Next testimonial",
+    "goTo": "Go to testimonial {n}",
+    "translatedFrom": {
+      "pt-BR": "Translated from Portuguese",
+      "en": "Translated from English"
+    },
+    "cloudTitle": "Word on the street",
+    "cloudLabel": "See all testimonials"
   },
   "contact": {
     "eyebrow": "Contact",

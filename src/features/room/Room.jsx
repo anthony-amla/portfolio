@@ -3,6 +3,7 @@ import { SECTION } from '../../config/site'
 import { profile } from '../../content/portfolio'
 import { useI18n } from '../../i18n/context'
 import { AVATAR_HEAD, HOTSPOTS, ROOM_H, ROOM_W, drawRoom } from './scene'
+import TestimonialCloud from './TestimonialCloud'
 
 const FRAME_MS = 125
 const WAVE_FRAMES = 16
@@ -147,6 +148,8 @@ export default function Room({ theme, onToggleTheme }) {
         >
           <strong>{t('room.speaker')}:</strong> {reaction ?? lines[lineIndex]}
         </p>
+
+        <TestimonialCloud />
 
         {OBJECTS.map((object) => {
           const area = HOTSPOTS[object.id]

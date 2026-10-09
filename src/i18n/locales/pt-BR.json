@@ -20,6 +20,7 @@
       "servers": "Servidores",
       "projects": "Projetos",
       "stack": "Stack",
+      "testimonials": "Depoimentos",
       "contact": "Contato"
     },
     "day": "Dia",
@@ -243,6 +244,22 @@
       "data": "Dados",
       "infra": "Infra"
     }
+  },
+  "testimonials": {
+    "eyebrow": "Depoimentos",
+    "title": "O que dizem por aí",
+    "intro": "Gestores, clientes e colegas contando como foi trabalhar comigo.",
+    "rating": "{n} de 5 estrelas",
+    "slide": "Depoimento {n} de {total}",
+    "previous": "Depoimento anterior",
+    "next": "Próximo depoimento",
+    "goTo": "Ir para o depoimento {n}",
+    "translatedFrom": {
+      "pt-BR": "Traduzido do português",
+      "en": "Traduzido do inglês"
+    },
+    "cloudTitle": "Dizem por aí",
+    "cloudLabel": "Ver todos os depoimentos"
   },
   "contact": {
     "eyebrow": "Contato",

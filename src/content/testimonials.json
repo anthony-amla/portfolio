@@ -1,0 +1,63 @@
+[
+  {
+    "id": "vitor-camargo",
+    "name": "Vitor \"Russo\" Camargo",
+    "role": {
+      "pt-BR": "Gestor Nacional",
+      "en": "National Manager"
+    },
+    "company": "WinsVUE",
+    "relation": "manager",
+    "rating": 5,
+    "original": "pt-BR",
+    "text": {
+      "pt-BR": "Muito prestativo, atencioso e inovador! Sempre disposto a ajudar, trazendo soluções criativas e demonstrando dedicação e profissionalismo em tudo o que faz.",
+      "en": "Very helpful, attentive and innovative! Always willing to help, bringing creative solutions and showing dedication and professionalism in everything he does."
+    }
+  },
+  {
+    "id": "raphael-frazao",
+    "name": "Raphael Frazão",
+    "role": {
+      "pt-BR": "Gestor Lado Leste",
+      "en": "Lado Leste Manager"
+    },
+    "company": "WinsVUE",
+    "relation": "manager",
+    "rating": 5,
+    "original": "pt-BR",
+    "text": {
+      "pt-BR": "Muito bom, atencioso, sempre resolve tudo com maestria e agilidade. As entregas vão sempre além do que é solicitado. Nota 100!",
+      "en": "Great and attentive, he always solves everything with skill and speed. His work always goes beyond what was asked. 10 out of 10!"
+    }
+  },
+  {
+    "id": "henry",
+    "name": "Henry",
+    "role": "CEO",
+    "company": "WinsVUE",
+    "relation": "client",
+    "rating": 5,
+    "original": "pt-BR",
+    "text": {
+      "pt-BR": "Funcionário muito dedicado e sempre disposto a aprender. Chegou \"desacreditado\", para ser só um dev comum, e hoje é um dos grandes pilares da empresa. Uma das maiores evoluções no ambiente profissional que eu já vi.",
+      "en": "A very dedicated employee, always eager to learn. He joined as the underdog, hired to be just another dev, and today he's one of the company's main pillars. One of the biggest professional growth stories I've ever seen."
+    }
+  },
+  {
+    "id": "bianca-castro",
+    "name": "Bianca de Castro",
+    "role": {
+      "pt-BR": "Modeladora 3D",
+      "en": "3D Modeler"
+    },
+    "company": "WinsVUE",
+    "relation": "colleague",
+    "rating": 5,
+    "original": "pt-BR",
+    "text": {
+      "pt-BR": "O Ghst é sempre muito bom no que faz. Me ajuda em tudo o que eu preciso, sempre de forma rápida e eficiente. Amo ele! 🩵",
+      "en": "Ghst is always great at what he does. He helps me with everything I need, always quickly and efficiently. Love him! 🩵"
+    }
+  }
+]

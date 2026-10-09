@@ -8,6 +8,7 @@ import JourneySection from '../sections/JourneySection'
 import ProjectsSection from '../sections/ProjectsSection'
 import ServersSection from '../sections/ServersSection'
 import StackSection from '../sections/StackSection'
+import TestimonialsSection from '../sections/TestimonialsSection'
 
 /**
  * @param {object} props
@@ -26,6 +27,7 @@ export default function HomePage({ theme, onToggleTheme }) {
       <ServersSection />
       <ProjectsSection />
       <StackSection />
+      <TestimonialsSection />
       <ContactSection theme={theme} footer={<Footer />} />
     </>
   )

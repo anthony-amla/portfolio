@@ -135,3 +135,15 @@
     margin: 6px 1px;
   }
 }
+
+/* Eight sections plus the theme toggle still fit a 360px phone. */
+@media (max-width: 420px) {
+  .navbar ul {
+    gap: 1px;
+    padding: 4px;
+  }
+
+  .nav-item {
+    padding: 4px;
+  }
+}

@@ -24,6 +24,7 @@ export const SECTION = {
   servers: 'servers',
   projects: 'projects',
   stack: 'stack',
+  testimonials: 'testimonials',
   contact: 'contact',
 }
 
@@ -35,5 +36,6 @@ export const NAV_ITEMS = [
   { id: SECTION.servers, icon: 'server' },
   { id: SECTION.projects, icon: 'archive' },
   { id: SECTION.stack, icon: 'backpack' },
+  { id: SECTION.testimonials, icon: 'star' },
   { id: SECTION.contact, icon: 'message' },
 ]

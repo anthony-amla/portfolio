@@ -177,3 +177,19 @@
 .text-danger {
   color: var(--danger);
 }
+
+/* Pixel stars (see components/icons/PixelStar). */
+.pixel-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.pixel-star {
+  display: block;
+  fill: color-mix(in srgb, var(--ink-2) 45%, transparent);
+}
+
+.pixel-star-filled {
+  fill: var(--gold);
+}

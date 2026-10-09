@@ -933,3 +933,141 @@ a.server-card:hover {
 .turnstile {
   min-height: 65px;
 }
+
+/* Testimonials carousel: a scroll-snap track, so touch swipes work natively. */
+.carousel-track {
+  display: grid;
+  grid-auto-columns: 88%;
+  grid-auto-flow: column;
+  gap: 18px;
+  margin: 0;
+  padding: 4px 8px 14px 2px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  list-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .carousel-track {
+    grid-auto-columns: calc((100% - 18px) / 2);
+  }
+}
+
+.carousel-slide {
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background: var(--panel-2);
+  border: 2px solid var(--line);
+  cursor: pointer;
+}
+
+.carousel-dot[aria-current='true'] {
+  background: var(--bar);
+}
+
+.testimonial-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin: 0;
+  padding: 22px;
+  background: var(--panel);
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+/* Big pixel quote mark in the corner. */
+.testimonial-card::after {
+  content: '\201D';
+  position: absolute;
+  top: 6px;
+  right: 18px;
+  color: var(--accent);
+  font-family: var(--font-pixel);
+  font-size: 64px;
+  line-height: 1;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.testimonial-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-translated {
+  display: inline-flex;
+  color: var(--ink-2);
+  cursor: help;
+}
+
+.testimonial-quote {
+  flex: 1;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 2px dashed var(--line-soft);
+}
+
+.testimonial-avatar {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  background: var(--bar);
+  color: #fff;
+  border: 2px solid var(--line);
+  border-radius: 7px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.25);
+  font-family: var(--font-pixel);
+  font-size: 20px;
+}
+
+.testimonial-name {
+  display: block;
+  font-family: var(--font-pixel);
+  font-size: 1.05rem;
+  font-weight: normal;
+}
+
+.testimonial-role {
+  display: block;
+  color: var(--ink-2);
+  font-size: 14px;
+}

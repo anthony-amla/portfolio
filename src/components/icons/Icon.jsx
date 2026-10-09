@@ -33,6 +33,7 @@ import play from 'pixelarticons/svg/play.svg?raw'
 import server from 'pixelarticons/svg/server.svg?raw'
 import star from 'pixelarticons/svg/star.svg?raw'
 import sun from 'pixelarticons/svg/sun.svg?raw'
+import translate from 'pixelarticons/svg/languages.svg?raw'
 import user from 'pixelarticons/svg/avatar-square.svg?raw'
 import users from 'pixelarticons/svg/users.svg?raw'
 
@@ -73,6 +74,7 @@ const ICONS = {
   server,
   star,
   sun,
+  translate,
   user,
   users,
 }
