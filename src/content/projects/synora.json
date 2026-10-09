@@ -152,7 +152,7 @@
       "label": { "pt-BR": "do evento no jogo até o painel", "en": "from in-game event to the dashboard" }
     },
     {
-      "value": "1,1 GB",
+      "value": { "pt-BR": "1,1 GB", "en": "1.1 GB" },
       "label": { "pt-BR": "de RAM para toda a stack", "en": "of RAM for the whole stack" }
     },
     {
