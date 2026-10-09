@@ -50,9 +50,14 @@ async function verifyTurnstile(token, secret, ip) {
   if (!token) return false
   const body = new URLSearchParams({ secret, response: token })
   if (ip) body.set('remoteip', ip)
-  const response = await fetch(TURNSTILE_VERIFY_URL, { method: 'POST', body })
-  const result = await response.json()
-  return result.success === true
+  try {
+    const response = await fetch(TURNSTILE_VERIFY_URL, { method: 'POST', body })
+    const result = await response.json()
+    return result.success === true
+  } catch (error) {
+    console.error('Turnstile verification failed:', error)
+    return false
+  }
 }
 
 async function sendToDiscord(message, webhookUrl) {
@@ -119,6 +124,7 @@ export async function onRequestPost({ request, env }) {
   } catch {
     return json({ ok: false, error: 'invalid_body' }, 400)
   }
+  if (!data || typeof data !== 'object' || Array.isArray(data)) return json({ ok: false, error: 'invalid_body' }, 400)
 
   // Honeypot filled in: pretend it worked and drop it.
   if (field(data, 'website')) return json({ ok: true })
