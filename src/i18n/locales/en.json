@@ -249,7 +249,6 @@
     "stack": "Stack",
     "others": "Other projects",
     "notFound": {
-      "eyebrow": "Error 404",
       "title": "This project doesn't exist",
       "text": "The link may be wrong or the project may have been taken down.",
       "cta": "See all projects"
