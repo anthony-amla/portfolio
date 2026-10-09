@@ -61,6 +61,8 @@ Routes: `/` (home, with `#about`, `#journey`, `#servers`, `#projects`, `#stack`,
 - **Images:** use a URL or a path inside `public/` (e.g. `/servers/revoada.webp`). An empty string renders the pixel art placeholder.
 - **Stack logos:** SVGs in `src/assets/stack/<name>.svg`. Single-color logos use `currentColor` so they follow the theme.
 - **Warning flag:** set `flagged: true` on a journey stage or project and add a `flag` text in the locale files. On projects it also hides the external link.
+- **Career dates:** `period: { start: '2025-08', end: '2025-12' }` on a journey stage, as `YYYY` or `YYYY-MM`. Leave `end` out for an ongoing stage. Dates are formatted per language.
+- **Start year:** `profile.startYear` feeds every `{startYear}` placeholder in the texts and the level counter.
 
 ### Adding a language
 
@@ -68,17 +70,35 @@ Routes: `/` (home, with `#about`, `#journey`, `#servers`, `#projects`, `#stack`,
 2. Register it in `LOCALES` in `src/i18n/config.js` with its `htmlLang` and `flag`.
 3. Add the flag to `src/components/icons/CountryFlag.jsx` and the language name under `language.names` in every locale.
 
+## Contact form
+
+`POST /api/contact` (`functions/api/contact.js`) validates the form, drops honeypot submissions, optionally checks Cloudflare Turnstile and delivers the message to every configured channel. It succeeds when at least one channel delivers.
+
+| Variable                  | Where                    | Purpose                                                              |
+| ------------------------- | ------------------------ | -------------------------------------------------------------------- |
+| `DISCORD_WEBHOOK_URL`     | Secret                   | Discord channel webhook                                              |
+| `RESEND_API_KEY`          | Secret                   | [Resend](https://resend.com) API key (free plan: 3,000 emails/month) |
+| `CONTACT_EMAIL_TO`        | Variable                 | Inbox that receives the messages                                     |
+| `CONTACT_EMAIL_FROM`      | Variable, optional       | Custom sender; requires a domain verified on Resend                  |
+| `TURNSTILE_SECRET_KEY`    | Secret, optional         | Turnstile secret key; enables server-side anti-spam                  |
+| `VITE_TURNSTILE_SITE_KEY` | Build variable, optional | Turnstile site key; shows the widget in the form                     |
+
+Configure Discord, email or both. Without a verified domain, Resend only delivers to the address you signed up with, sent from `onboarding@resend.dev`; replies go straight to the visitor when they typed an email. Set both Turnstile keys or neither.
+
 ## Deploying to Cloudflare Pages
 
 ### From GitHub (recommended)
 
-1. Push this project to a GitHub repository (private is fine).
+1. Push this project to a GitHub repository.
 2. In Cloudflare: **Workers & Pages → Create → Pages → Connect to Git**, then pick the repository.
-3. Build settings: framework preset `Vite`, build command `npm run build`, output directory `dist`.
-4. Under **Settings → Variables and Secrets**, add the secret `DISCORD_WEBHOOK_URL` with the webhook of the Discord channel that should receive messages.
-5. Every `git push` publishes a new version.
+3. Build settings: framework preset `Vite`, build command `npm run build`, output directory `dist`. The Node version comes from `.nvmrc`.
+4. Under **Settings → Variables and Secrets**, add the contact form variables above for Production (and Preview if you use branch previews).
+5. Redeploy once after adding variables; they apply from the next deployment on.
+6. Every `git push` publishes a new version.
 
-Deep links such as `/projects/ghst-store` work out of the box: without a `404.html`, Pages serves `index.html` for unknown paths.
+Deep links such as `/projects/ghst-store` work out of the box: without a `404.html`, Pages serves `index.html` for unknown paths. `public/_headers` adds basic security headers and long caching for hashed assets.
+
+If you add a custom domain, update the absolute `og:url` and `og:image` URLs in `index.html`.
 
 ### From the terminal
 
@@ -88,7 +108,7 @@ npm run deploy
 npx wrangler pages secret put DISCORD_WEBHOOK_URL --project-name ghst-portfolio
 ```
 
-To test the contact endpoint locally, copy `.dev.vars.example` to `.dev.vars`, set the webhook and run `npm run dev:pages`.
+To test the contact endpoint locally, copy `.dev.vars.example` to `.dev.vars`, fill in the channels and run `npm run dev:pages`.
 
 ## Credits
 
