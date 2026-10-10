@@ -8,7 +8,7 @@
     "pt-BR": "Plataforma de logs para servidores FiveM: registra cada ação do jogo sem pesar no servidor e encontra qualquer evento em milhões de registros em menos de 1 segundo. Desenvolvido para a WinsVue.",
     "en": "A logging platform for FiveM servers: it records every in-game action without slowing the server down and finds any event across millions of records in under a second. Built for WinsVue."
   },
-  "cover": "https://cdn.ghst.com.br/projects/synora/panel-logs.webp",
+  "cover": "https://cdn.ghst.com.br/projects/synora/cover.webp",
   "tags": ["Go", "ClickHouse", "Redis", "React", "TypeScript", "Lua"],
   "servers": ["miami", "ladoleste", "nacional", "revoada", "cpx", "sete"],
   "video": {
