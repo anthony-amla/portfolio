@@ -45,6 +45,19 @@
     }
   },
   {
+    "id": "nat",
+    "name": "Nat",
+    "role": "CEO",
+    "company": "Atlantis",
+    "relation": "client",
+    "rating": 5,
+    "original": "pt-BR",
+    "text": {
+      "pt-BR": "Estamos há 7 meses trabalhando com o Ghostty e, desde o início, ele demonstrou ser um profissional extremamente competente, solícito e, principalmente, excelente no que faz.\nTudo o que idealizamos é desenvolvido e entregue em tempo recorde. E o que torna o trabalho dele ainda melhor é que, além de executar tudo o que pedimos, ele também compartilha suas opiniões e sugestões com base em toda a sua experiência no mundo do FiveM, contribuindo para resultados ainda melhores do que imaginávamos.\nÉ um profissional extremamente dedicado, comprometido e competente, cujo trabalho se tornou indispensável para nós atualmente. Tudo é entregue exatamente como solicitamos e, na maioria das vezes, supera nossas expectativas.\nE tem um detalhe que mostra o nível de dedicação dele: se você passar um tempo sem enviar novas pendências, ele mesmo cobra para que você mande mais coisas para ele fazer KKKKKKKK.\nEnfim, é um profissional que realmente veste a camisa, entende o que faz e entrega um trabalho de altíssima qualidade. Vale cada centavo investido no serviço dele, e nossa experiência ao longo desses 7 meses só reforça o quanto foi acertada a decisão de trabalhar com ele.",
+      "en": "We've been working with Ghostty for 7 months and, from the very start, he has proven to be an extremely competent, helpful and, above all, excellent professional.\nEverything we come up with gets built and delivered in record time. And what makes his work even better is that, besides doing everything we ask, he also shares his opinions and suggestions based on all his experience in the FiveM world, helping us reach results even better than we imagined.\nHe's an extremely dedicated, committed and competent professional, and his work has become indispensable to us. Everything is delivered exactly as we asked and, most of the time, goes beyond our expectations.\nAnd there's one detail that shows how dedicated he is: if you go a while without sending new tasks, he's the one who asks you to send him more things to do HAHAHAHA.\nAll in all, he's a professional who's truly all in, knows what he's doing and delivers top-quality work. Worth every cent invested in his service, and our experience over these 7 months only confirms how right we were to work with him."
+    }
+  },
+  {
     "id": "bianca-castro",
     "name": "Bianca de Castro",
     "role": {
@@ -58,6 +71,17 @@
     "text": {
       "pt-BR": "O Ghst é sempre muito bom no que faz. Me ajuda em tudo o que eu preciso, sempre de forma rápida e eficiente. Amo ele! 🩵",
       "en": "Ghst is always great at what he does. He helps me with everything I need, always quickly and efficiently. Love him! 🩵"
+    }
+  },
+  {
+    "id": "lucca-suricato",
+    "name": "Lucca Suricato",
+    "relation": "colleague",
+    "rating": 5,
+    "original": "pt-BR",
+    "text": {
+      "pt-BR": "Tem uma coisa que eu gosto muito no Murilo, que é: ele tem sabor. Eu vou explicar isso com mais calma. O Murilo é uma pessoa extremamente proativa, focada e disciplinada, e isso faz com que seja um profissional muitíssimo valorizado, não só tecnicamente, mas também nas famosas soft skills. Um bom comunicador e tem um bom perfil de liderança. Um excelente parceiro de trabalho!",
+      "en": "There's one thing I really like about Murilo: he has flavor. Let me explain that a bit better. Murilo is an extremely proactive, focused and disciplined person, and that makes him a highly valued professional, not only technically but also in those famous soft skills. A good communicator with a strong leadership profile. An excellent work partner!"
     }
   }
 ]
