@@ -259,7 +259,17 @@
       "en": "Translated from English"
     },
     "cloudTitle": "Word on the street",
-    "cloudLabel": "See all testimonials"
+    "cloudLabel": "See all testimonials",
+    "readMore": "Read in full",
+    "dialogTitle": "Review from {name}",
+    "close": "Close",
+    "relations": {
+      "manager": "Manager",
+      "client": "Client",
+      "supervisor": "Supervisor",
+      "colleague": "Coworker",
+      "other": "Partner"
+    }
   },
   "contact": {
     "eyebrow": "Contact",

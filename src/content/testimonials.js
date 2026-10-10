@@ -9,8 +9,8 @@
  * @typedef {object} Testimonial
  * @property {string} id
  * @property {string} name
- * @property {any} role
- * @property {string} company
+ * @property {any} [role] Optional; without role and company the card shows the relation
+ * @property {string} [company]
  * @property {'manager' | 'client' | 'supervisor' | 'colleague' | 'other'} relation
  * @property {number} rating 1 to 5
  * @property {string} original Locale the text was written in

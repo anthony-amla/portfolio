@@ -1030,10 +1030,109 @@ a.server-card:hover {
 }
 
 .testimonial-quote {
-  flex: 1;
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.65;
+  white-space: pre-line;
+}
+
+.testimonial-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Long texts stop at 7 lines in the card; the full text opens in a modal. */
+.testimonial-quote-clamp {
+  display: -webkit-box;
+  align-self: stretch;
+  flex-shrink: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
+}
+
+.testimonial-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  background: none;
+  color: var(--accent);
+  border: 0;
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.testimonial-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Full testimonial modal (native <dialog>, so it sits in the top layer). */
+html.modal-open {
+  overflow: hidden;
+}
+
+.testimonial-dialog {
+  width: min(640px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 48px);
+  margin: auto;
+  padding: 0;
+  overflow: visible;
+  background: none;
+  color: var(--ink);
+  border: 0;
+}
+
+.testimonial-dialog::backdrop {
+  background: rgba(10, 12, 24, 0.7);
+}
+
+.testimonial-dialog > .px-window {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 48px);
+}
+
+.testimonial-dialog-quote {
+  display: grid;
+  gap: 12px;
+}
+
+.testimonial-dialog-quote p {
+  margin: 0;
+}
+
+.testimonial-dialog-close {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  padding: 2px;
+  background: none;
+  color: inherit;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.testimonial-dialog-close:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 22px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .testimonial-author {

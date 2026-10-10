@@ -259,7 +259,17 @@
       "en": "Traduzido do inglês"
     },
     "cloudTitle": "Dizem por aí",
-    "cloudLabel": "Ver todos os depoimentos"
+    "cloudLabel": "Ver todos os depoimentos",
+    "readMore": "Ver completo",
+    "dialogTitle": "Depoimento de {name}",
+    "close": "Fechar",
+    "relations": {
+      "manager": "Gestor",
+      "client": "Cliente",
+      "supervisor": "Supervisor",
+      "colleague": "Colega de trabalho",
+      "other": "Parceiro"
+    }
   },
   "contact": {
     "eyebrow": "Contato",

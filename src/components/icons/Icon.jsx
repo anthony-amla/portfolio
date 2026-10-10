@@ -9,6 +9,7 @@ import check from 'pixelarticons/svg/check.svg?raw'
 import chevronDown from 'pixelarticons/svg/chevron-down.svg?raw'
 import chevronLeft from 'pixelarticons/svg/chevron-left.svg?raw'
 import chevronRight from 'pixelarticons/svg/chevron-right.svg?raw'
+import close from 'pixelarticons/svg/close.svg?raw'
 import code from 'pixelarticons/svg/code.svg?raw'
 import copy from 'pixelarticons/svg/copy.svg?raw'
 import crown from 'pixelarticons/svg/crown.svg?raw'
@@ -49,6 +50,7 @@ const ICONS = {
   chevronDown,
   chevronLeft,
   chevronRight,
+  close,
   code,
   copy,
   crown,
