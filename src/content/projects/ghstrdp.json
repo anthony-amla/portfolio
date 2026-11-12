@@ -1,0 +1,288 @@
+{
+  "$schema": "../project.schema.json",
+  "id": "ghstrdp",
+  "published": "2026-11-11",
+  "order": 4,
+  "kind": "owned",
+  "kindLabel": {
+    "pt-BR": "Projeto pessoal",
+    "en": "Personal project",
+    "es": "Proyecto personal",
+    "it": "Progetto personale",
+    "de": "Persönliches Projekt"
+  },
+  "title": "GhstRDP",
+  "summary": {
+    "pt-BR": "Gerenciador de servidores RDP para Windows: sessões em abas, senhas criptografadas no próprio PC e um cofre protegido por PIN. Uma ferramenta que criei para o meu dia a dia, grátis e open source.",
+    "en": "An RDP server manager for Windows: sessions in tabs, passwords encrypted on your own PC and a PIN-protected vault. A tool I built for my day-to-day work, free and open source.",
+    "es": "Gestor de servidores RDP para Windows: sesiones en pestañas, contraseñas cifradas en tu propio PC y una bóveda protegida con PIN. Una herramienta que creé para mi día a día, gratis y open source.",
+    "it": "Un gestore di server RDP per Windows: sessioni in schede, password cifrate sul tuo PC e una cassaforte protetta da PIN. Uno strumento che ho creato per il mio lavoro quotidiano, gratuito e open source.",
+    "de": "Ein RDP-Server-Manager für Windows: Sitzungen in Tabs, lokal auf dem eigenen PC verschlüsselte Passwörter und ein PIN-geschützter Tresor. Ein Tool, das ich für meinen Arbeitsalltag gebaut habe, kostenlos und Open Source."
+  },
+  "cover": "/projects/ghstrdp/cover.webp",
+  "tags": ["C#", ".NET", "WPF", "RDP", "Velopack"],
+  "link": {
+    "href": "https://rdp.ghst.com.br",
+    "label": {
+      "pt-BR": "Visitar site",
+      "en": "Visit website",
+      "es": "Visitar sitio",
+      "it": "Visita il sito",
+      "de": "Zur Website"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/projects/ghstrdp/cover.webp",
+      "caption": {
+        "pt-BR": "GhstRDP: seus servidores RDP em um só lugar",
+        "en": "GhstRDP: all your RDP servers in one place",
+        "es": "GhstRDP: tus servidores RDP en un solo lugar",
+        "it": "GhstRDP: tutti i tuoi server RDP in un unico posto",
+        "de": "GhstRDP: alle deine RDP-Server an einem Ort"
+      }
+    },
+    {
+      "src": "/projects/ghstrdp/01.webp",
+      "caption": {
+        "pt-BR": "Servidores organizados por cliente, com status e latência",
+        "en": "Servers organized by client, with status and latency",
+        "es": "Servidores organizados por cliente, con estado y latencia",
+        "it": "Server organizzati per cliente, con stato e latenza",
+        "de": "Server nach Kunden sortiert, mit Status und Latenz"
+      }
+    },
+    {
+      "src": "/projects/ghstrdp/02.webp",
+      "caption": {
+        "pt-BR": "Cofre de senhas: as credenciais de cada máquina em um card",
+        "en": "Password vault: every machine's credentials in one card",
+        "es": "Bóveda de contraseñas: las credenciales de cada máquina en una tarjeta",
+        "it": "Cassaforte delle password: le credenziali di ogni macchina in una card",
+        "de": "Passworttresor: die Zugangsdaten jeder Maschine auf einer Karte"
+      }
+    },
+    {
+      "src": "/projects/ghstrdp/03.webp",
+      "caption": {
+        "pt-BR": "Modo sigiloso: IPs falsos e borrados para gravar a tela",
+        "en": "Privacy mode: fake, blurred IPs for screen recording",
+        "es": "Modo privado: IPs falsas y difuminadas para grabar la pantalla",
+        "it": "Modalità privacy: IP falsi e sfocati per registrare lo schermo",
+        "de": "Privatsphäre-Modus: falsche, verschwommene IPs für Bildschirmaufnahmen"
+      }
+    }
+  ],
+  "features": {
+    "pt-BR": [
+      "Sessões RDP em abas, como no navegador, com reconexão automática",
+      "Opção de abrir no mstsc, já com usuário e senha preenchidos",
+      "Status online e latência de cada servidor em tempo real",
+      "Organização por cliente, com etiquetas coloridas e banner com a logo",
+      "Cofre de senhas por máquina, protegido por PIN",
+      "Modo sigiloso para gravar ou compartilhar a tela",
+      "Instalador sem administrador e atualização automática"
+    ],
+    "en": [
+      "RDP sessions in tabs, like a browser, with automatic reconnection",
+      "Option to open in mstsc with username and password already filled in",
+      "Live online status and latency for every server",
+      "Organized by client, with colored tags and a logo banner",
+      "Per-machine password vault protected by a PIN",
+      "Privacy mode for recording or sharing the screen",
+      "Installer without admin rights and automatic updates"
+    ],
+    "es": [
+      "Sesiones RDP en pestañas, como en el navegador, con reconexión automática",
+      "Opción de abrir en mstsc, con usuario y contraseña ya completados",
+      "Estado en línea y latencia de cada servidor en tiempo real",
+      "Organización por cliente, con etiquetas de colores y un banner con el logo",
+      "Bóveda de contraseñas por máquina, protegida con PIN",
+      "Modo privado para grabar o compartir la pantalla",
+      "Instalador sin permisos de administrador y actualización automática"
+    ],
+    "it": [
+      "Sessioni RDP in schede, come in un browser, con riconnessione automatica",
+      "Opzione per aprire in mstsc con utente e password già compilati",
+      "Stato online e latenza di ogni server in tempo reale",
+      "Organizzazione per cliente, con etichette colorate e un banner con il logo",
+      "Cassaforte delle password per ogni macchina, protetta da PIN",
+      "Modalità privacy per registrare o condividere lo schermo",
+      "Installer senza permessi di amministratore e aggiornamenti automatici"
+    ],
+    "de": [
+      "RDP-Sitzungen in Tabs wie im Browser, mit automatischer Wiederverbindung",
+      "Option zum Öffnen in mstsc, mit bereits ausgefülltem Benutzernamen und Passwort",
+      "Online-Status und Latenz jedes Servers in Echtzeit",
+      "Nach Kunden organisiert, mit farbigen Tags und Logo-Banner",
+      "Passworttresor pro Maschine, geschützt durch PIN",
+      "Privatsphäre-Modus zum Aufnehmen oder Teilen des Bildschirms",
+      "Installation ohne Adminrechte und automatische Updates"
+    ]
+  },
+  "about": {
+    "pt-BR": [
+      "No meu trabalho eu acesso todos os dias dezenas de VPS e dedicados de clientes diferentes. Com o mstsc e o Windows App da Microsoft, isso virava atalhos .rdp espalhados, uma janela para cada máquina, senhas guardadas em lugares diferentes e um app lento e instável.",
+      "Criei o GhstRDP para resolver isso dentro do meu próprio ambiente de trabalho: cada servidor é cadastrado uma vez e conecta com um clique, as sessões abrem em abas e as senhas ficam no meu PC, criptografadas localmente e protegidas por PIN.",
+      "Não é um produto, é uma ferramenta que fiz para mim e deixei aberta para quem tem o mesmo problema. Não tem conta, servidor nem telemetria, e o código fica no GitHub para qualquer um conferir."
+    ],
+    "en": [
+      "At work I connect to dozens of VPS and dedicated servers from different clients every day. With mstsc and Microsoft's Windows App, that meant scattered .rdp shortcuts, one window per machine, passwords kept in different places and a slow, unstable app.",
+      "I built GhstRDP to fix that inside my own work environment: each server is added once and connects with one click, sessions open in tabs and passwords stay on my PC, encrypted locally and protected by a PIN.",
+      "It is not a product, it is a tool I made for myself and left open for anyone with the same problem. There is no account, server or telemetry, and the code is on GitHub for anyone to check."
+    ],
+    "es": [
+      "En mi trabajo accedo todos los días a decenas de VPS y servidores dedicados de distintos clientes. Con mstsc y la Windows App de Microsoft, eso se traducía en accesos directos .rdp dispersos, una ventana por máquina, contraseñas guardadas en sitios distintos y una app lenta e inestable.",
+      "Creé GhstRDP para resolverlo dentro de mi propio entorno de trabajo: cada servidor se registra una vez y se conecta con un clic, las sesiones se abren en pestañas y las contraseñas se quedan en mi PC, cifradas localmente y protegidas con PIN.",
+      "No es un producto, es una herramienta que hice para mí y dejé abierta para quien tenga el mismo problema. No tiene cuenta, servidor ni telemetría, y el código está en GitHub para que cualquiera lo revise."
+    ],
+    "it": [
+      "Per lavoro mi collego ogni giorno a decine di VPS e server dedicati di clienti diversi. Con mstsc e la Windows App di Microsoft, questo voleva dire collegamenti .rdp sparsi ovunque, una finestra per ogni macchina, password salvate in posti diversi e un'app lenta e instabile.",
+      "Ho creato GhstRDP per risolvere il problema nel mio ambiente di lavoro: ogni server si aggiunge una volta sola e si connette con un clic, le sessioni si aprono in schede e le password restano sul mio PC, cifrate in locale e protette da PIN.",
+      "Non è un prodotto, è uno strumento che ho fatto per me e ho lasciato aperto per chi ha lo stesso problema. Niente account, niente server, niente telemetria, e il codice è su GitHub perché chiunque possa controllarlo."
+    ],
+    "de": [
+      "Bei der Arbeit verbinde ich mich jeden Tag mit Dutzenden VPS und dedizierten Servern verschiedener Kunden. Mit mstsc und der Windows App von Microsoft hieß das: verstreute .rdp-Verknüpfungen, ein Fenster pro Maschine, Passwörter an verschiedenen Orten und eine langsame, instabile App.",
+      "Ich habe GhstRDP gebaut, um das in meiner eigenen Arbeitsumgebung zu lösen: Jeder Server wird einmal angelegt und verbindet sich mit einem Klick, Sitzungen öffnen sich in Tabs, und die Passwörter bleiben auf meinem PC, lokal verschlüsselt und per PIN geschützt.",
+      "Es ist kein Produkt, sondern ein Tool, das ich für mich gemacht und für alle mit demselben Problem offen gelassen habe. Kein Konto, kein Server, keine Telemetrie, und der Code liegt auf GitHub, damit ihn jeder prüfen kann."
+    ]
+  },
+  "flowTitle": {
+    "pt-BR": "Como instalar",
+    "en": "How to install",
+    "es": "Cómo instalar",
+    "it": "Come installarlo",
+    "de": "Installation"
+  },
+  "flow": [
+    {
+      "name": {
+        "pt-BR": "Baixar",
+        "en": "Download",
+        "es": "Descargar",
+        "it": "Scarica",
+        "de": "Herunterladen"
+      },
+      "tech": "GitHub Releases",
+      "text": {
+        "pt-BR": "Baixe o GhstRDPApp-win-Setup.exe pelo site ou na página de versões do GitHub.",
+        "en": "Download GhstRDPApp-win-Setup.exe from the website or the GitHub releases page.",
+        "es": "Descarga GhstRDPApp-win-Setup.exe desde el sitio o desde la página de versiones de GitHub.",
+        "it": "Scarica GhstRDPApp-win-Setup.exe dal sito o dalla pagina delle release su GitHub.",
+        "de": "Lade GhstRDPApp-win-Setup.exe von der Website oder von der Releases-Seite auf GitHub herunter."
+      }
+    },
+    {
+      "name": {
+        "pt-BR": "Aviso do Windows",
+        "en": "Windows warning",
+        "es": "Aviso de Windows",
+        "it": "Avviso di Windows",
+        "de": "Windows-Warnung"
+      },
+      "tech": "SmartScreen",
+      "text": {
+        "pt-BR": "O instalador ainda não tem assinatura digital, então o Windows ou o antivírus podem acusar como ameaça. Clique em \"Mais informações\" e depois em \"Executar assim mesmo\". O código é aberto para qualquer um conferir.",
+        "en": "The installer is not digitally signed yet, so Windows or your antivirus may flag it as a threat. Click \"More info\" and then \"Run anyway\". The code is open for anyone to check.",
+        "es": "El instalador todavía no tiene firma digital, así que Windows o el antivirus pueden marcarlo como amenaza. Haz clic en \"Más información\" y luego en \"Ejecutar de todas formas\". El código es abierto para que cualquiera lo revise.",
+        "it": "L'installer non ha ancora una firma digitale, quindi Windows o l'antivirus potrebbero segnalarlo come minaccia. Clicca su \"Ulteriori informazioni\" e poi su \"Esegui comunque\". Il codice è aperto perché chiunque possa controllarlo.",
+        "de": "Der Installer ist noch nicht digital signiert, deshalb können Windows oder dein Virenscanner ihn als Bedrohung melden. Klick auf „Weitere Informationen“ und dann auf „Trotzdem ausführen“. Der Code ist offen, jeder kann ihn prüfen."
+      }
+    },
+    {
+      "name": {
+        "pt-BR": "Instalar",
+        "en": "Install",
+        "es": "Instalar",
+        "it": "Installa",
+        "de": "Installieren"
+      },
+      "text": {
+        "pt-BR": "Instala só para o seu usuário, sem pedir administrador e sem precisar do .NET.",
+        "en": "It installs for your user only, without admin rights and without needing .NET.",
+        "es": "Se instala solo para tu usuario, sin pedir permisos de administrador y sin necesitar .NET.",
+        "it": "Si installa solo per il tuo utente, senza permessi di amministratore e senza bisogno di .NET.",
+        "de": "Installiert nur für deinen Benutzer, ohne Adminrechte und ohne .NET."
+      }
+    },
+    {
+      "name": {
+        "pt-BR": "Conectar",
+        "en": "Connect",
+        "es": "Conectar",
+        "it": "Connettiti",
+        "de": "Verbinden"
+      },
+      "tech": "Velopack",
+      "text": {
+        "pt-BR": "Cadastre um servidor e clique no card para conectar. Depois disso o app se atualiza sozinho.",
+        "en": "Add a server and click its card to connect. From then on the app updates itself.",
+        "es": "Registra un servidor y haz clic en su tarjeta para conectar. A partir de ahí, la app se actualiza sola.",
+        "it": "Aggiungi un server e clicca sulla sua card per connetterti. Da lì in poi l'app si aggiorna da sola.",
+        "de": "Leg einen Server an und klick auf seine Karte, um dich zu verbinden. Danach aktualisiert sich die App von selbst."
+      }
+    }
+  ],
+  "stack": [
+    {
+      "name": "C#",
+      "role": {
+        "pt-BR": "Toda a lógica do app",
+        "en": "All of the app logic",
+        "es": "Toda la lógica de la app",
+        "it": "Tutta la logica dell'app",
+        "de": "Die gesamte App-Logik"
+      }
+    },
+    {
+      "name": ".NET",
+      "role": {
+        "pt-BR": ".NET 10, embutido no instalador",
+        "en": ".NET 10, bundled with the installer",
+        "es": ".NET 10, incluido en el instalador",
+        "it": ".NET 10, incluso nell'installer",
+        "de": ".NET 10, im Installer enthalten"
+      }
+    },
+    {
+      "name": "WPF",
+      "role": {
+        "pt-BR": "Interface do app",
+        "en": "App interface",
+        "es": "Interfaz de la app",
+        "it": "Interfaccia dell'app",
+        "de": "Oberfläche der App"
+      }
+    },
+    {
+      "name": "mstscax",
+      "role": {
+        "pt-BR": "Controle ActiveX do RDP do próprio Windows",
+        "en": "Windows' own RDP ActiveX control",
+        "es": "Control ActiveX de RDP del propio Windows",
+        "it": "Il controllo ActiveX RDP integrato in Windows",
+        "de": "Das RDP-ActiveX-Steuerelement von Windows selbst"
+      }
+    },
+    {
+      "name": "Velopack",
+      "role": {
+        "pt-BR": "Instalador e atualização automática",
+        "en": "Installer and automatic updates",
+        "es": "Instalador y actualización automática",
+        "it": "Installer e aggiornamenti automatici",
+        "de": "Installer und automatische Updates"
+      }
+    },
+    {
+      "name": "GitHub Actions",
+      "role": {
+        "pt-BR": "Build e release a cada versão",
+        "en": "Build and release for every version",
+        "es": "Build y release en cada versión",
+        "it": "Build e release a ogni versione",
+        "de": "Build und Release für jede Version"
+      }
+    }
+  ]
+}

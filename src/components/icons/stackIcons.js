@@ -14,6 +14,7 @@ const ALIASES = {
   vue: 'vuejs',
   golang: 'go',
   redisstreams: 'redis',
+  net: 'dotnet',
 }
 
 /** Skills without a logo: pixel icon names from components/icons/Icon.jsx. */
@@ -24,14 +25,20 @@ const GENERIC = {
   arquitetura: 'blocks',
   architecture: 'blocks',
   pmavoice: 'mic',
+  wpf: 'blocks',
+  rdp: 'server',
+  mstscax: 'server',
+  velopack: 'archive',
+  githubactions: 'github',
 }
 
-/** "Liderança" -> "lideranca", "Node.js" -> "nodejs". */
+/** "Liderança" -> "lideranca", "Node.js" -> "nodejs", "C#" -> "csharp". */
 const keyOf = (name) =>
   name
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
+    .replace(/#/g, 'sharp')
     .replace(/[^a-z0-9]/g, '')
 
 /**
