@@ -1,11 +1,18 @@
-import ptBR from './locales/pt-BR.json'
+import de from './locales/de.json'
 import en from './locales/en.json'
+import es from './locales/es.json'
+import it from './locales/it.json'
+import ptBR from './locales/pt-BR.json'
 
 export const DEFAULT_LOCALE = 'pt-BR'
 
+/** `name` is the language's own name, shown as-is in every locale; `short` labels the corner button. */
 export const LOCALES = {
-  'pt-BR': { messages: ptBR, htmlLang: 'pt-BR', flag: 'br' },
-  en: { messages: en, htmlLang: 'en', flag: 'gb' },
+  'pt-BR': { messages: ptBR, htmlLang: 'pt-BR', flag: 'br', name: 'Português', short: 'PT' },
+  en: { messages: en, htmlLang: 'en', flag: 'gb', name: 'English', short: 'EN' },
+  es: { messages: es, htmlLang: 'es', flag: 'es', name: 'Español', short: 'ES' },
+  it: { messages: it, htmlLang: 'it', flag: 'it', name: 'Italiano', short: 'IT' },
+  de: { messages: de, htmlLang: 'de', flag: 'de', name: 'Deutsch', short: 'DE' },
 }
 
 export const isLocale = (value) => Object.hasOwn(LOCALES, value)

@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "title": "Murilo Araujo · Ghst",
+    "description": "Murilo Araujo (Ghst): dev full-stack, especialista en FiveM y licenciado en Derecho.",
+    "projectTitle": "{title} · Ghst",
+    "notFoundTitle": "Página no encontrada · Ghst"
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido",
+    "noImage": "{title} (sin imagen)",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "expandImage": "Ampliar imagen",
+    "close": "Cerrar"
+  },
+  "nav": {
+    "label": "Secciones",
+    "items": {
+      "home": "Habitación",
+      "about": "Perfil",
+      "journey": "Trayectoria",
+      "servers": "Servidores",
+      "projects": "Proyectos",
+      "stack": "Stack",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "day": "Día",
+    "night": "Noche",
+    "switchToDay": "Cambiar al modo día",
+    "switchToNight": "Cambiar al modo noche"
+  },
+  "language": {
+    "label": "Idioma",
+    "names": {
+      "pt-BR": "Português",
+      "en": "English",
+      "es": "Español",
+      "it": "Italiano",
+      "de": "Deutsch"
+    },
+    "choose": "Elegir idioma"
+  },
+  "music": {
+    "idle": "Música",
+    "playing": "Sonando",
+    "play": "Reproducir banda sonora",
+    "pause": "Pausar banda sonora"
+  },
+  "hero": {
+    "status": "En línea desde {startYear}",
+    "aka": "aka {nick}",
+    "role": "Dev full-stack · Especialista en FiveM",
+    "lead": "{years} años creando sistemas para servidores de roleplay: gameplay en Lua, interfaces en React, APIs y la infraestructura que lo mantiene todo en línea. Licenciado en Derecho que eligió el código.",
+    "primaryCta": "Ver trayectoria",
+    "secondaryCta": "Hablemos",
+    "roomHint": "Consejo: haz clic en los objetos de la habitación.",
+    "scrollHint": "Conóceme mejor",
+    "scrollHintLabel": "Ir al perfil"
+  },
+  "room": {
+    "label": "Habitación en pixel art: el avatar de Ghst junto a una estantería con libros de Derecho, un póster, una ventana y un escritorio con un PC.",
+    "speaker": "Ghst",
+    "lines": [
+      "¡Hola! Soy Ghst. Haz clic en las cosas de la habitación.",
+      "Hago sistemas para FiveM desde {startYear}.",
+      "Lua, React, Node, Go... lo que el servidor necesite.",
+      "Soy licenciado en Derecho. Cambié los códigos legales por VS Code.",
+      "¿Tienes una idea? Escríbeme en la sección de contacto."
+    ],
+    "reactions": {
+      "toNight": "¡Buenas noches! Buena hora para programar.",
+      "toDay": "¡Buenos días! Café en mano.",
+      "plant": "Esta planta ya ha sobrevivido a muchos deploys de viernes."
+    },
+    "objects": {
+      "avatar": {
+        "label": "Ghst",
+        "hint": "Saludar"
+      },
+      "shelf": {
+        "label": "Estantería",
+        "hint": "Licenciado en Derecho"
+      },
+      "poster": {
+        "label": "Póster",
+        "hint": "Servidores"
+      },
+      "window": {
+        "label": "Ventana",
+        "hintDay": "Anochecer",
+        "hintNight": "Amanecer"
+      },
+      "desk": {
+        "label": "Setup",
+        "hint": "Ver proyectos"
+      },
+      "plant": {
+        "label": "Planta",
+        "hint": "Solo una planta"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Perfil",
+    "title": "Quién es Ghst",
+    "windowTitle": "Perfil de {nick}",
+    "missionsTitle": "Misiones",
+    "missions": ["Hacer el bien", "Marcar la diferencia", "Aportar soluciones"],
+    "stats": {
+      "level": {
+        "label": "Nivel",
+        "note": "años en FiveM"
+      },
+      "servers": {
+        "label": "Servidores",
+        "note": "atendidos"
+      },
+      "class": {
+        "label": "Clase",
+        "value": "Full-stack",
+        "note": "Lua · TS · Go"
+      },
+      "education": {
+        "label": "Formación",
+        "value": "Derecho",
+        "note": "licenciatura"
+      }
+    },
+    "paragraphs": [
+      "Soy Murilo Araujo, pero en la comunidad todo el mundo me llama Ghst. Empecé a programar en {startYear} escribiendo scripts en Lua para servidores de roleplay en FiveM y nunca más paré.",
+      "Las interfaces dentro del juego me llevaron a React y TypeScript. Los servidores me llevaron al back-end y a la infraestructura. Hoy trabajo como full-stack: pienso el sistema, construyo la interfaz, escribo la API y cuido de dónde se ejecuta todo.",
+      "Ah, y soy licenciado en Derecho. Estudié leyes, artículos y jurisprudencia, pero es entre bugs, deploys y servidores donde me siento en casa. Cambié los códigos legales por VS Code y no me arrepiento. El Derecho no se convirtió en mi profesión, pero me dejó una mirada más aguda sobre la vida."
+    ],
+    "education": {
+      "title": "Licenciatura en Derecho",
+      "text": "Formado en un área, realizado en otra."
+    },
+    "badgesTitle": "Insignias",
+    "badges": {
+      "since": "Desde {startYear}",
+      "fullstack": "Full-stack",
+      "lead": "Tech Lead",
+      "store": "Tienda propia",
+      "law": "Licenciado en Derecho"
+    }
+  },
+  "journey": {
+    "eyebrow": "Trayectoria",
+    "title": "Cada etapa, un nivel",
+    "intro": "De scripts en Lua en un servidor de roleplay a liderar la tecnología de grupos de servidores. Este es el camino hasta aquí.",
+    "levelShort": "Nv. {level}",
+    "levelLabel": "Nivel {level}, {progress}% para el siguiente",
+    "levelBadge": "LV",
+    "currentQuest": "Misión actual",
+    "loot": "Loot",
+    "servers": "Servidores",
+    "items": {
+      "start": {
+        "title": "Primer spawn",
+        "org": "Freelance",
+        "role": "Consultor y desarrollador FiveM",
+        "text": "Empecé escribiendo scripts en Lua para servidores de roleplay. Se convirtió en trabajo: proyectos freelance y consultorías creando sistemas, interfaces e integraciones que funcionan en producción, con jugadores reales usándolos.",
+        "loot": ["Lua", "MySQL", "NUI"]
+      },
+      "growth": {
+        "title": "De las NUIs a la web",
+        "org": "Evolución",
+        "role": "Front-end, back-end e infra",
+        "text": "Las interfaces dentro del juego me llevaron a React y TypeScript. Después vinieron las APIs en Node.js y NestJS, las bases de datos, Docker y los deploys. FiveM fue mi puerta de entrada al full-stack.",
+        "loot": ["React", "TypeScript", "Node.js", "NestJS", "Docker"]
+      },
+      "store": {
+        "title": "Tienda propia",
+        "org": "Ghst.store",
+        "role": "Fundador y desarrollador",
+        "flag": "Tienda desactivada temporalmente",
+        "text": "Creé y mantengo mi propia plataforma de venta de scripts FiveM: catálogo, licencias automáticas, descarga protegida, panel del cliente e integración con Discord. Un producto de principio a fin, desde cero hasta la posventa.",
+        "loot": ["React", "Node.js", "MongoDB"]
+      },
+      "leste": {
+        "title": "Liderazgo técnico",
+        "org": "LesteGroup",
+        "role": "Tech Lead · Full-stack",
+        "text": "Lideré la tecnología del grupo de servidores de Fronteira Leste y fui el único desarrollador de Lado Leste: arquitectura, sistemas, interfaces y el mantenimiento del servidor en el día a día.",
+        "loot": ["Liderazgo", "Arquitectura", "Lua", "React"]
+      },
+      "wins": {
+        "title": "Misión actual",
+        "org": "WinsVue",
+        "role": "Desarrollador full-stack",
+        "text": "Trabajo en todos los servidores del portafolio de WinsVue, una de las mayores empresas del ecosistema FiveM: creo sistemas, interfaces e integraciones y me encargo del mantenimiento y la evolución de los servidores.",
+        "loot": ["Lua", "React", "Go", "ClickHouse", "Redis"]
+      }
+    },
+    "present": "actual"
+  },
+  "servers": {
+    "eyebrow": "Servidores",
+    "title": "Dónde ha estado mi código",
+    "intro": "Servidores de roleplay en los que creé sistemas, interfaces e integraciones, o me encargué del mantenimiento.",
+    "via": "vía {orgs}",
+    "orgSeparator": " y ",
+    "linkLabel": "{name} en {network} (se abre en una pestaña nueva)",
+    "offline": "Fuera de línea"
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Cosas que he construido",
+    "intro": "La mayor parte de mi trabajo es para clientes y empresas, así que el código es privado. Esto es lo que puedo mostrar.",
+    "viewProject": "Ver proyecto",
+    "kinds": {
+      "owned": "Producto propio",
+      "exclusive": "Producto exclusivo",
+      "closed": "Código cerrado"
+    },
+    "seeAll": "Ver todos los proyectos ({n})"
+  },
+  "projectPage": {
+    "back": "Todos los proyectos",
+    "features": "Qué incluye",
+    "impact": "Impacto",
+    "servers": "Dónde funciona",
+    "about": "Sobre el proyecto",
+    "flow": "Cómo funciona",
+    "technologies": "Tecnologías",
+    "video": "Video de presentación",
+    "goTo": "Ir a la diapositiva {n}",
+    "stack": "Stack",
+    "others": "Otros proyectos",
+    "notFound": {
+      "title": "Este proyecto no existe",
+      "text": "Puede que el enlace esté mal o que el proyecto ya no esté en línea.",
+      "cta": "Ver todos los proyectos"
+    }
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Página no encontrada",
+    "text": "Esta dirección no existe o ha cambiado de lugar.",
+    "cta": "Volver al inicio"
+  },
+  "stack": {
+    "eyebrow": "Stack",
+    "title": "Inventario",
+    "intro": "Las herramientas que uso a diario, del script dentro del juego al servidor en producción.",
+    "groups": {
+      "languages": "Lenguajes",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "data": "Datos",
+      "infra": "Infra"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Testimonios",
+    "title": "Lo que dicen por ahí",
+    "intro": "Gestores, clientes y compañeros cuentan cómo fue trabajar conmigo.",
+    "rating": "{n} de 5 estrellas",
+    "slide": "Testimonio {n} de {total}",
+    "previous": "Testimonio anterior",
+    "next": "Testimonio siguiente",
+    "goTo": "Ir al testimonio {n}",
+    "translatedFrom": {
+      "pt-BR": "Traducido del portugués",
+      "en": "Traducido del inglés"
+    },
+    "cloudTitle": "Dicen por ahí",
+    "cloudLabel": "Ver todos los testimonios",
+    "readMore": "Leer completo",
+    "dialogTitle": "Testimonio de {name}",
+    "close": "Cerrar",
+    "relations": {
+      "manager": "Gestor",
+      "client": "Cliente",
+      "supervisor": "Supervisor",
+      "colleague": "Compañero de trabajo",
+      "other": "Socio"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos",
+    "intro": "Un proyecto FiveM, un trabajo freelance, una vacante o solo una idea que quieres hacer realidad. Respondo por correo o Discord.",
+    "windowTitle": "Nuevo mensaje",
+    "fields": {
+      "name": "Nombre",
+      "contact": "Correo o Discord",
+      "subject": "Asunto",
+      "message": "Mensaje"
+    },
+    "subjects": ["Proyecto FiveM", "Freelance / presupuesto", "Vacante / propuesta", "Colaboración", "Otro"],
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "sent": "¡Mensaje enviado! Te respondo enseguida.",
+    "error": "No pude enviarlo ahora. Escríbeme a",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "channels": {
+      "email": {
+        "label": "Correo"
+      },
+      "discord": {
+        "label": "Discord",
+        "value": "Abrir perfil"
+      },
+      "linkedin": {
+        "label": "LinkedIn"
+      },
+      "github": {
+        "label": "GitHub"
+      },
+      "instagram": {
+        "label": "Instagram"
+      }
+    }
+  },
+  "footer": {
+    "credits": "© {year} {name} · {nick}. Cada píxel hecho con cariño."
+  },
+  "projectsPage": {
+    "title": "Todos los proyectos",
+    "back": "Volver al inicio",
+    "searchLabel": "Buscar proyectos",
+    "searchPlaceholder": "Buscar por nombre, tecnología o funcionalidad…",
+    "filterLabel": "Filtrar por tecnología",
+    "allTags": "Todas",
+    "count": "{n} proyecto(s)",
+    "clear": "Limpiar filtros",
+    "empty": "Ningún proyecto coincide con estos filtros."
+  }
+}

@@ -43,11 +43,40 @@ function UnitedKingdomFlag() {
   )
 }
 
-const FLAGS = { br: BrazilFlag, gb: UnitedKingdomFlag }
+function SpainFlag() {
+  return (
+    <>
+      <rect width="20" height="14" fill="#aa151b" />
+      <rect y="4" width="20" height="6" fill="#f1bf00" />
+    </>
+  )
+}
+
+function ItalyFlag() {
+  return (
+    <>
+      <rect width="7" height="14" fill="#009246" />
+      <rect x="7" width="6" height="14" fill="#fff" />
+      <rect x="13" width="7" height="14" fill="#ce2b37" />
+    </>
+  )
+}
+
+function GermanyFlag() {
+  return (
+    <>
+      <rect width="20" height="5" fill="#000" />
+      <rect y="5" width="20" height="4" fill="#dd0000" />
+      <rect y="9" width="20" height="5" fill="#ffce00" />
+    </>
+  )
+}
+
+const FLAGS = { br: BrazilFlag, gb: UnitedKingdomFlag, es: SpainFlag, it: ItalyFlag, de: GermanyFlag }
 
 /**
  * @param {object} props
- * @param {'br' | 'gb'} props.code
+ * @param {'br' | 'gb' | 'es' | 'it' | 'de'} props.code
  * @param {number} [props.width=24] Width in px; height keeps the 10:7 ratio.
  */
 export default function CountryFlag({ code, width = 24 }) {

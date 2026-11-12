@@ -34,8 +34,12 @@
     "label": "Language",
     "names": {
       "pt-BR": "Português",
-      "en": "English"
-    }
+      "en": "English",
+      "es": "Español",
+      "it": "Italiano",
+      "de": "Deutsch"
+    },
+    "choose": "Choose language"
   },
   "music": {
     "idle": "Music",

@@ -1,29 +1,29 @@
+import { useState } from 'react'
 import CountryFlag from '../../components/icons/CountryFlag'
 import { LOCALES } from '../../i18n/config'
 import { useI18n } from '../../i18n/context'
+import LanguageDialog from './LanguageDialog'
 
-/** Segmented control with one flag per available locale. */
+/** Current language as a corner button; opens the language picker. */
 export default function LanguageSwitcher() {
-  const { locale, setLocale, t } = useI18n()
+  const { locale, t } = useI18n()
+  const [open, setOpen] = useState(false)
+  const current = LOCALES[locale]
 
   return (
-    <div className="language-switcher" role="group" aria-label={t('language.label')}>
-      {Object.entries(LOCALES).map(([code, { flag }]) => {
-        const name = t(`language.names.${code}`)
-        return (
-          <button
-            key={code}
-            type="button"
-            className="language-option"
-            onClick={() => setLocale(code)}
-            aria-pressed={locale === code}
-            aria-label={name}
-            title={name}
-          >
-            <CountryFlag code={flag} />
-          </button>
-        )
-      })}
-    </div>
+    <>
+      <button
+        type="button"
+        className="language-toggle"
+        onClick={() => setOpen(true)}
+        aria-haspopup="dialog"
+        aria-label={t('language.choose')}
+        title={t('language.choose')}
+      >
+        <CountryFlag code={current.flag} />
+        <span className="control-label">{current.short}</span>
+      </button>
+      {open && <LanguageDialog onClose={() => setOpen(false)} />}
+    </>
   )
 }

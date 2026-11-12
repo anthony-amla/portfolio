@@ -6,24 +6,44 @@
   "kind": "owned",
   "flag": {
     "pt-BR": "Desativada temporariamente",
-    "en": "Temporarily offline"
+    "en": "Temporarily offline",
+    "es": "Desactivada temporalmente",
+    "it": "Temporaneamente offline",
+    "de": "Vorübergehend offline"
   },
   "title": "Ghst.store",
   "summary": {
     "pt-BR": "Plataforma de venda, entrega e gestão de scripts FiveM, com licenças automáticas e painel do cliente.",
-    "en": "A platform to sell, deliver and manage FiveM scripts, with automatic licensing and a customer dashboard."
+    "en": "A platform to sell, deliver and manage FiveM scripts, with automatic licensing and a customer dashboard.",
+    "es": "Plataforma de venta, entrega y gestión de scripts FiveM, con licencias automáticas y panel del cliente.",
+    "it": "Una piattaforma per vendere, consegnare e gestire script FiveM, con licenze automatiche e area clienti.",
+    "de": "Eine Plattform zum Verkaufen, Ausliefern und Verwalten von FiveM-Skripten, mit automatischen Lizenzen und Kundenbereich."
   },
   "cover": "https://cdn.ghst.com.br/projects/ghst-store/1.webp",
   "tags": ["React", "Node.js", "Tailwind", "MongoDB"],
   "link": {
     "href": "https://ghst.com.br",
-    "label": { "pt-BR": "Visitar loja", "en": "Visit store" }
+    "label": {
+      "pt-BR": "Visitar loja",
+      "en": "Visit store",
+      "es": "Visitar tienda",
+      "it": "Visita lo store",
+      "de": "Zum Shop"
+    }
   },
   "gallery": [
-    { "src": "https://cdn.ghst.com.br/projects/ghst-store/1.webp" },
-    { "src": "https://cdn.ghst.com.br/projects/ghst-store/2.webp" },
-    { "src": "https://cdn.ghst.com.br/projects/ghst-store/3.webp" },
-    { "src": "https://cdn.ghst.com.br/projects/ghst-store/4.webp" }
+    {
+      "src": "https://cdn.ghst.com.br/projects/ghst-store/1.webp"
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/ghst-store/2.webp"
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/ghst-store/3.webp"
+    },
+    {
+      "src": "https://cdn.ghst.com.br/projects/ghst-store/4.webp"
+    }
   ],
   "features": {
     "pt-BR": [
@@ -39,6 +59,27 @@
       "Protected downloads",
       "Customer dashboard: downloads, license copy and nickname changes",
       "Discord integration"
+    ],
+    "es": [
+      "Catálogo de scripts con una página propia para cada producto",
+      "Licencias automáticas, con control y reinicio de IP",
+      "Descarga protegida de archivos",
+      "Panel del cliente: descargar, copiar la licencia, cambiar el apodo",
+      "Integración con Discord"
+    ],
+    "it": [
+      "Catalogo di script con una pagina dedicata per ogni prodotto",
+      "Licenze automatiche, con controllo e reset dell'IP",
+      "Download protetti",
+      "Area clienti: download, copia della licenza, cambio nickname",
+      "Integrazione con Discord"
+    ],
+    "de": [
+      "Eigene Seite für jedes Skript im Katalog",
+      "Automatische Lizenzen mit IP-Bindung und -Reset",
+      "Geschützte Downloads",
+      "Kundenbereich: Downloads, Lizenz kopieren, Nickname ändern",
+      "Discord-Integration"
     ]
   }
 }

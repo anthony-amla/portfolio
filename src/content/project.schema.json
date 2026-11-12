@@ -13,7 +13,13 @@
         {
           "type": "object",
           "required": ["pt-BR"],
-          "properties": { "pt-BR": { "type": "string" }, "en": { "type": "string" } },
+          "properties": {
+            "pt-BR": { "type": "string" },
+            "en": { "type": "string" },
+            "es": { "type": "string" },
+            "it": { "type": "string" },
+            "de": { "type": "string" }
+          },
           "additionalProperties": false
         }
       ]
@@ -27,7 +33,10 @@
           "required": ["pt-BR"],
           "properties": {
             "pt-BR": { "type": "array", "items": { "type": "string" } },
-            "en": { "type": "array", "items": { "type": "string" } }
+            "en": { "type": "array", "items": { "type": "string" } },
+            "es": { "type": "array", "items": { "type": "string" } },
+            "it": { "type": "array", "items": { "type": "string" } },
+            "de": { "type": "array", "items": { "type": "string" } }
           },
           "additionalProperties": false
         }

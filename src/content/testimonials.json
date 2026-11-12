@@ -4,7 +4,10 @@
     "name": "Vitor \"Russo\" Camargo",
     "role": {
       "pt-BR": "Gestor Nacional",
-      "en": "National Manager"
+      "en": "National Manager",
+      "es": "Gestor de Nacional",
+      "it": "Responsabile Nacional",
+      "de": "Manager Nacional"
     },
     "company": "WinsVUE",
     "relation": "manager",
@@ -12,7 +15,10 @@
     "original": "pt-BR",
     "text": {
       "pt-BR": "Muito prestativo, atencioso e inovador! Sempre disposto a ajudar, trazendo soluções criativas e demonstrando dedicação e profissionalismo em tudo o que faz.",
-      "en": "Very helpful, attentive and innovative! Always willing to help, bringing creative solutions and showing dedication and professionalism in everything he does."
+      "en": "Very helpful, attentive and innovative! Always willing to help, bringing creative solutions and showing dedication and professionalism in everything he does.",
+      "es": "¡Muy servicial, atento e innovador! Siempre dispuesto a ayudar, aportando soluciones creativas y demostrando dedicación y profesionalismo en todo lo que hace.",
+      "it": "Molto disponibile, attento e innovativo! Sempre pronto ad aiutare, porta soluzioni creative e dimostra dedizione e professionalità in tutto quello che fa.",
+      "de": "Sehr hilfsbereit, aufmerksam und innovativ! Immer bereit zu helfen, mit kreativen Lösungen, und bei allem, was er macht, zeigt er Engagement und Professionalität."
     }
   },
   {
@@ -20,7 +26,10 @@
     "name": "Raphael Frazão",
     "role": {
       "pt-BR": "Gestor Lado Leste",
-      "en": "Lado Leste Manager"
+      "en": "Lado Leste Manager",
+      "es": "Gestor de Lado Leste",
+      "it": "Responsabile Lado Leste",
+      "de": "Manager Lado Leste"
     },
     "company": "WinsVUE",
     "relation": "manager",
@@ -28,7 +37,10 @@
     "original": "pt-BR",
     "text": {
       "pt-BR": "Muito bom, atencioso, sempre resolve tudo com maestria e agilidade. As entregas vão sempre além do que é solicitado. Nota 100!",
-      "en": "Great and attentive, he always solves everything with skill and speed. His work always goes beyond what was asked. 10 out of 10!"
+      "en": "Great and attentive, he always solves everything with skill and speed. His work always goes beyond what was asked. 10 out of 10!",
+      "es": "Muy bueno, atento, siempre lo resuelve todo con maestría y agilidad. Sus entregas siempre van más allá de lo que se le pide. ¡Nota 10!",
+      "it": "Bravissimo, attento, risolve sempre tutto con maestria e rapidità. Le consegne vanno sempre oltre quello che viene richiesto. 10 e lode!",
+      "de": "Sehr gut und aufmerksam, löst immer alles meisterhaft und schnell. Seine Ergebnisse gehen immer über das hinaus, was verlangt wird. 100 von 100!"
     }
   },
   {
@@ -41,7 +53,10 @@
     "original": "pt-BR",
     "text": {
       "pt-BR": "Funcionário muito dedicado e sempre disposto a aprender. Chegou \"desacreditado\", para ser só um dev comum, e hoje é um dos grandes pilares da empresa. Uma das maiores evoluções no ambiente profissional que eu já vi.",
-      "en": "A very dedicated employee, always eager to learn. He joined as the underdog, hired to be just another dev, and today he's one of the company's main pillars. One of the biggest professional growth stories I've ever seen."
+      "en": "A very dedicated employee, always eager to learn. He joined as the underdog, hired to be just another dev, and today he's one of the company's main pillars. One of the biggest professional growth stories I've ever seen.",
+      "es": "Un empleado muy dedicado y siempre dispuesto a aprender. Llegó sin que nadie apostara por él, para ser solo un dev más, y hoy es uno de los grandes pilares de la empresa. Una de las mayores evoluciones profesionales que he visto.",
+      "it": "Un dipendente molto dedicato e sempre pronto a imparare. È arrivato \"sottovalutato\", per essere solo un dev qualunque, e oggi è uno dei grandi pilastri dell'azienda. Una delle crescite professionali più grandi che abbia mai visto.",
+      "de": "Ein sehr engagierter Mitarbeiter, immer lernbereit. Er kam „ohne große Erwartungen“, sollte nur ein ganz normaler Dev sein, und ist heute eine der großen Säulen des Unternehmens. Eine der größten beruflichen Entwicklungen, die ich je gesehen habe."
     }
   },
   {
@@ -54,7 +69,10 @@
     "original": "pt-BR",
     "text": {
       "pt-BR": "Estamos há 7 meses trabalhando com o Ghostty e, desde o início, ele demonstrou ser um profissional extremamente competente, solícito e, principalmente, excelente no que faz.\nTudo o que idealizamos é desenvolvido e entregue em tempo recorde. E o que torna o trabalho dele ainda melhor é que, além de executar tudo o que pedimos, ele também compartilha suas opiniões e sugestões com base em toda a sua experiência no mundo do FiveM, contribuindo para resultados ainda melhores do que imaginávamos.\nÉ um profissional extremamente dedicado, comprometido e competente, cujo trabalho se tornou indispensável para nós atualmente. Tudo é entregue exatamente como solicitamos e, na maioria das vezes, supera nossas expectativas.\nE tem um detalhe que mostra o nível de dedicação dele: se você passar um tempo sem enviar novas pendências, ele mesmo cobra para que você mande mais coisas para ele fazer KKKKKKKK.\nEnfim, é um profissional que realmente veste a camisa, entende o que faz e entrega um trabalho de altíssima qualidade. Vale cada centavo investido no serviço dele, e nossa experiência ao longo desses 7 meses só reforça o quanto foi acertada a decisão de trabalhar com ele.",
-      "en": "We've been working with Ghostty for 7 months and, from the very start, he has proven to be an extremely competent, helpful and, above all, excellent professional.\nEverything we come up with gets built and delivered in record time. And what makes his work even better is that, besides doing everything we ask, he also shares his opinions and suggestions based on all his experience in the FiveM world, helping us reach results even better than we imagined.\nHe's an extremely dedicated, committed and competent professional, and his work has become indispensable to us. Everything is delivered exactly as we asked and, most of the time, goes beyond our expectations.\nAnd there's one detail that shows how dedicated he is: if you go a while without sending new tasks, he's the one who asks you to send him more things to do HAHAHAHA.\nAll in all, he's a professional who's truly all in, knows what he's doing and delivers top-quality work. Worth every cent invested in his service, and our experience over these 7 months only confirms how right we were to work with him."
+      "en": "We've been working with Ghostty for 7 months and, from the very start, he has proven to be an extremely competent, helpful and, above all, excellent professional.\nEverything we come up with gets built and delivered in record time. And what makes his work even better is that, besides doing everything we ask, he also shares his opinions and suggestions based on all his experience in the FiveM world, helping us reach results even better than we imagined.\nHe's an extremely dedicated, committed and competent professional, and his work has become indispensable to us. Everything is delivered exactly as we asked and, most of the time, goes beyond our expectations.\nAnd there's one detail that shows how dedicated he is: if you go a while without sending new tasks, he's the one who asks you to send him more things to do HAHAHAHA.\nAll in all, he's a professional who's truly all in, knows what he's doing and delivers top-quality work. Worth every cent invested in his service, and our experience over these 7 months only confirms how right we were to work with him.",
+      "es": "Llevamos 7 meses trabajando con Ghostty y, desde el principio, demostró ser un profesional extremadamente competente, atento y, sobre todo, excelente en lo que hace.\nTodo lo que imaginamos se desarrolla y se entrega en tiempo récord. Y lo que hace que su trabajo sea todavía mejor es que, además de hacer todo lo que le pedimos, también comparte sus opiniones y sugerencias basadas en toda su experiencia en el mundo de FiveM, lo que nos ayuda a lograr resultados aún mejores de lo que imaginábamos.\nEs un profesional extremadamente dedicado, comprometido y competente, cuyo trabajo se ha vuelto indispensable para nosotros hoy en día. Todo se entrega exactamente como lo pedimos y, la mayoría de las veces, supera nuestras expectativas.\nY hay un detalle que muestra su nivel de dedicación: si pasas un tiempo sin mandarle nuevas tareas, él mismo te pide que le mandes más cosas para hacer JAJAJAJAJA.\nEn fin, es un profesional que realmente se pone la camiseta, entiende lo que hace y entrega un trabajo de altísima calidad. Vale cada centavo invertido en su servicio, y nuestra experiencia a lo largo de estos 7 meses no hace más que confirmar lo acertada que fue la decisión de trabajar con él.",
+      "it": "Lavoriamo con Ghostty da 7 mesi e, fin dall'inizio, si è dimostrato un professionista estremamente competente, disponibile e, soprattutto, eccellente in quello che fa.\nTutto quello che immaginiamo viene sviluppato e consegnato in tempi record. E ciò che rende il suo lavoro ancora migliore è che, oltre a fare tutto quello che chiediamo, condivide anche le sue opinioni e i suoi suggerimenti basati su tutta la sua esperienza nel mondo FiveM, contribuendo a risultati ancora migliori di quanto immaginassimo.\nÈ un professionista estremamente dedicato, impegnato e competente, e il suo lavoro oggi è diventato indispensabile per noi. Tutto viene consegnato esattamente come chiediamo e, il più delle volte, supera le nostre aspettative.\nE c'è un dettaglio che mostra il suo livello di dedizione: se passi un po' di tempo senza mandargli nuove cose da fare, è lui stesso a chiederti di mandargliene altre AHAHAHAHAH.\nInsomma, è un professionista che indossa davvero la maglia, sa quello che fa e consegna un lavoro di altissima qualità. Vale ogni centesimo investito nel suo servizio, e la nostra esperienza in questi 7 mesi non fa che confermare quanto sia stata giusta la decisione di lavorare con lui.",
+      "de": "Wir arbeiten seit 7 Monaten mit Ghostty zusammen, und von Anfang an hat er sich als extrem kompetenter, hilfsbereiter und vor allem hervorragender Profi gezeigt.\nAlles, was wir uns ausdenken, wird in Rekordzeit entwickelt und geliefert. Und was seine Arbeit noch besser macht: Er setzt nicht nur alles um, worum wir ihn bitten, sondern bringt auch seine Meinung und Vorschläge ein, auf Basis seiner ganzen Erfahrung in der FiveM-Welt, und trägt so zu Ergebnissen bei, die noch besser sind, als wir sie uns vorgestellt hatten.\nEr ist ein extrem engagierter, zuverlässiger und kompetenter Profi, dessen Arbeit für uns heute unverzichtbar geworden ist. Alles wird genau so geliefert, wie wir es wollten, und übertrifft meistens unsere Erwartungen.\nUnd ein Detail zeigt, wie engagiert er ist: Wenn du eine Weile keine neuen Aufgaben schickst, macht er selbst Druck, dass du ihm mehr zu tun gibst HAHAHAHA.\nKurz gesagt: ein Profi, der sich wirklich voll reinhängt, weiß, was er tut, und Arbeit von allerhöchster Qualität abliefert. Jeder investierte Cent lohnt sich, und unsere Erfahrung in diesen 7 Monaten bestätigt nur, wie richtig die Entscheidung war, mit ihm zu arbeiten."
     }
   },
   {
@@ -62,7 +80,10 @@
     "name": "Bianca de Castro",
     "role": {
       "pt-BR": "Modeladora 3D",
-      "en": "3D Modeler"
+      "en": "3D Modeler",
+      "es": "Modeladora 3D",
+      "it": "Modellatrice 3D",
+      "de": "3D-Modelliererin"
     },
     "company": "WinsVUE",
     "relation": "colleague",
@@ -70,7 +91,10 @@
     "original": "pt-BR",
     "text": {
       "pt-BR": "O Ghst é sempre muito bom no que faz. Me ajuda em tudo o que eu preciso, sempre de forma rápida e eficiente. Amo ele! 🩵",
-      "en": "Ghst is always great at what he does. He helps me with everything I need, always quickly and efficiently. Love him! 🩵"
+      "en": "Ghst is always great at what he does. He helps me with everything I need, always quickly and efficiently. Love him! 🩵",
+      "es": "Ghst siempre es muy bueno en lo que hace. Me ayuda con todo lo que necesito, siempre de forma rápida y eficiente. ¡Lo adoro! 🩵",
+      "it": "Ghst è sempre bravissimo in quello che fa. Mi aiuta in tutto quello di cui ho bisogno, sempre in modo rapido ed efficiente. Lo adoro! 🩵",
+      "de": "Ghst ist immer richtig gut in dem, was er macht. Er hilft mir bei allem, was ich brauche, immer schnell und effizient. Hab ihn lieb! 🩵"
     }
   },
   {
@@ -81,7 +105,10 @@
     "original": "pt-BR",
     "text": {
       "pt-BR": "Tem uma coisa de que eu gosto muito no Murilo, que é: ele tem sabor. Eu vou explicar isso com mais calma. O Murilo é uma pessoa extremamente proativa, focada e disciplinada, e isso faz com que seja um profissional muitíssimo valorizado, não só tecnicamente, mas também nas famosas soft skills. É um bom comunicador e tem um bom perfil de liderança. Um excelente parceiro de trabalho!",
-      "en": "There's one thing I really like about Murilo: he has flavor. Let me explain that a bit better. Murilo is an extremely proactive, focused and disciplined person, and that makes him a highly valued professional, not only technically but also in those famous soft skills. A good communicator with a strong leadership profile. An excellent work partner!"
+      "en": "There's one thing I really like about Murilo: he has flavor. Let me explain that a bit better. Murilo is an extremely proactive, focused and disciplined person, and that makes him a highly valued professional, not only technically but also in those famous soft skills. A good communicator with a strong leadership profile. An excellent work partner!",
+      "es": "Hay algo que me gusta mucho de Murilo: tiene sabor. Lo voy a explicar con más calma. Murilo es una persona extremadamente proactiva, enfocada y disciplinada, y eso lo convierte en un profesional muy valorado, no solo en lo técnico, sino también en las famosas soft skills. Es un buen comunicador y tiene un buen perfil de liderazgo. ¡Un excelente compañero de trabajo!",
+      "it": "C'è una cosa che mi piace molto di Murilo: ha sapore. Ora lo spiego con più calma. Murilo è una persona estremamente proattiva, concentrata e disciplinata, e questo lo rende un professionista molto apprezzato, non solo dal punto di vista tecnico, ma anche nelle famose soft skill. È un buon comunicatore e ha un buon profilo da leader. Un ottimo compagno di lavoro!",
+      "de": "Eine Sache mag ich an Murilo besonders: Er hat das gewisse Etwas. Ich erkläre das mal in Ruhe. Murilo ist ein extrem proaktiver, fokussierter und disziplinierter Mensch, und das macht ihn zu einem äußerst geschätzten Profi, nicht nur fachlich, sondern auch bei den berühmten Soft Skills. Er kommuniziert gut und hat ein gutes Führungsprofil. Ein hervorragender Arbeitspartner!"
     }
   }
 ]
