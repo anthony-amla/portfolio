@@ -12,6 +12,23 @@
   margin-bottom: 32px;
 }
 
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-bottom: 32px;
+}
+
+.section-head .section-header {
+  margin-bottom: 0;
+}
+
+.section-action {
+  flex-shrink: 0;
+}
+
 .section-intro {
   margin: 12px 0 0;
   color: var(--ink-2);
@@ -146,4 +163,20 @@
   .nav-item {
     padding: 4px;
   }
+}
+
+/* Same frame as the cards: full border and offset shadow instead of the top/bottom bevel. */
+.section-action .px-btn {
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.section-action .px-btn:hover {
+  background: var(--panel-2);
+}
+
+.section-action .px-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--shadow);
 }

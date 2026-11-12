@@ -209,7 +209,8 @@
       "owned": "Personal product",
       "exclusive": "Exclusive product",
       "closed": "Closed source"
-    }
+    },
+    "seeAll": "See all projects ({n})"
   },
   "projectPage": {
     "back": "All projects",
@@ -312,5 +313,16 @@
   },
   "footer": {
     "credits": "© {year} {name} · {nick}. Crafted with care, pixel by pixel."
+  },
+  "projectsPage": {
+    "title": "All projects",
+    "back": "Back to home",
+    "searchLabel": "Search projects",
+    "searchPlaceholder": "Search by name, technology or feature…",
+    "filterLabel": "Filter by technology",
+    "allTags": "All",
+    "count": "{n} project(s)",
+    "clear": "Clear filters",
+    "empty": "No projects match these filters."
   }
 }

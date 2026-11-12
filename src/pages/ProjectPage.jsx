@@ -12,7 +12,7 @@ import { reveal } from '../hooks/useReveal'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { useI18n } from '../i18n/context'
 import Footer from '../layout/Footer'
-import { sectionHref } from '../lib/router'
+import { PROJECTS_PATH } from '../lib/router'
 import { NotFound } from './NotFoundPage'
 
 /** Video first (when there is one), then the images. */
@@ -133,7 +133,7 @@ function ProjectDetails({ project }) {
     <>
       <article className="section project-page" aria-labelledby="project-title">
         <div className="container">
-          <a href={sectionHref(SECTION.projects)} className="back-link" {...reveal()}>
+          <a href={PROJECTS_PATH} className="back-link" {...reveal()}>
             <Icon name="chevronLeft" size={16} /> {t('projectPage.back')}
           </a>
 
@@ -281,7 +281,7 @@ export default function ProjectPage({ id }) {
         title={t('projectPage.notFound.title')}
         text={t('projectPage.notFound.text')}
         ctaLabel={t('projectPage.notFound.cta')}
-        ctaHref={sectionHref(SECTION.projects)}
+        ctaHref={PROJECTS_PATH}
       />
     )
   }

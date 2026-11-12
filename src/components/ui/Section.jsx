@@ -10,20 +10,28 @@ import { reveal } from '../../hooks/useReveal'
  * @param {string} [props.intro]
  * @param {import('react').ReactNode} props.children
  * @param {import('react').ReactNode} [props.footer] Rendered after the container (used by the last section).
+ * @param {import('react').ReactNode} [props.action] Shown on the right, vertically centered with the header.
  */
-export default function Section({ id, eyebrow, title, intro, children, footer }) {
+export default function Section({ id, eyebrow, title, intro, children, footer, action }) {
   const titleId = `${id}-title`
 
   return (
     <section id={id} className="section" aria-labelledby={titleId}>
       <div className="container">
-        <header className="section-header" {...reveal()}>
-          <p className="eyebrow">{eyebrow}</p>
-          <h2 id={titleId} className="section-title">
-            {title}
-          </h2>
-          {intro && <p className="section-intro">{intro}</p>}
-        </header>
+        <div className={action ? 'section-head' : undefined}>
+          <header className="section-header" {...reveal()}>
+            <p className="eyebrow">{eyebrow}</p>
+            <h2 id={titleId} className="section-title">
+              {title}
+            </h2>
+            {intro && <p className="section-intro">{intro}</p>}
+          </header>
+          {action && (
+            <div className="section-action" {...reveal(1)}>
+              {action}
+            </div>
+          )}
+        </div>
         {children}
       </div>
       {footer}

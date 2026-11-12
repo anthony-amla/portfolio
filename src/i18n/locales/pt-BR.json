@@ -209,7 +209,8 @@
       "owned": "Produto próprio",
       "exclusive": "Produto exclusivo",
       "closed": "Código fechado"
-    }
+    },
+    "seeAll": "Ver todos os projetos ({n})"
   },
   "projectPage": {
     "back": "Todos os projetos",
@@ -312,5 +313,16 @@
   },
   "footer": {
     "credits": "© {year} {name} · {nick}. Cada pixel feito com carinho."
+  },
+  "projectsPage": {
+    "title": "Todos os projetos",
+    "back": "Voltar ao início",
+    "searchLabel": "Buscar projetos",
+    "searchPlaceholder": "Buscar por nome, tecnologia ou recurso…",
+    "filterLabel": "Filtrar por tecnologia",
+    "allTags": "Todas",
+    "count": "{n} projeto(s)",
+    "clear": "Limpar filtros",
+    "empty": "Nenhum projeto encontrado com esses filtros."
   }
 }

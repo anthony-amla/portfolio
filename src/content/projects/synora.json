@@ -1,6 +1,7 @@
 {
   "$schema": "../project.schema.json",
   "id": "synora",
+  "published": "2026-10-09",
   "order": 1,
   "kind": "exclusive",
   "title": "Synora",

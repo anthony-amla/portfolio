@@ -1,6 +1,7 @@
 {
   "$schema": "../project.schema.json",
   "id": "ghst-store",
+  "published": "2026-10-09",
   "order": 3,
   "kind": "owned",
   "flag": {

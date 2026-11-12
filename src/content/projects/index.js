@@ -8,7 +8,8 @@
  *
  * @typedef {object} Project
  * @property {string} id
- * @property {number} order
+ * @property {string} published YYYY-MM-DD
+ * @property {number} [order]
  * @property {'owned' | 'exclusive' | 'closed'} kind
  * @property {any} [kindLabel]
  * @property {any} [flag]
@@ -31,7 +32,7 @@ const files = import.meta.glob('./*.json', { eager: true, import: 'default' })
 /** @type {Project[]} */
 export const projects = Object.values(files)
   .filter((project) => !project.hidden)
-  .sort((a, b) => a.order - b.order)
+  .sort((a, b) => b.published.localeCompare(a.published) || (a.order ?? 0) - (b.order ?? 0))
 
 /** Chip tone used for each project kind. */
 export const KIND_TONE = {

@@ -1,6 +1,7 @@
 {
   "$schema": "../project.schema.json",
   "id": "wins-voip",
+  "published": "2026-10-09",
   "order": 2,
   "kind": "exclusive",
   "title": "Wins VoIP",

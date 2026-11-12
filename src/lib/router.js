@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
  *
  * Routes:
  *   /               home
+ *   /projects       every project, with search
  *   /projects/:id   project details
  *   anything else   not found
  *
@@ -14,7 +15,10 @@ import { useEffect, useState } from 'react'
 
 const listeners = new Set()
 
+const PROJECTS_ROUTE = /^\/projects\/?$/
 const PROJECT_ROUTE = /^\/projects\/([\w-]+)\/?$/
+
+export const PROJECTS_PATH = '/projects'
 
 export const projectPath = (id) => `/projects/${id}`
 
@@ -22,10 +26,11 @@ export const sectionHref = (sectionId) => `/#${sectionId}`
 
 /**
  * @param {string} path
- * @returns {{ name: 'home' } | { name: 'project', id: string } | { name: 'notFound' }}
+ * @returns {{ name: 'home' } | { name: 'projects' } | { name: 'project', id: string } | { name: 'notFound' }}
  */
 export function matchRoute(path) {
   if (path === '/' || path === '') return { name: 'home' }
+  if (PROJECTS_ROUTE.test(path)) return { name: 'projects' }
   const project = path.match(PROJECT_ROUTE)
   if (project) return { name: 'project', id: project[1] }
   return { name: 'notFound' }

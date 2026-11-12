@@ -9,6 +9,7 @@ import { matchRoute, useLinkInterception, usePathname } from './lib/router'
 import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
 import ProjectPage from './pages/ProjectPage'
+import ProjectsPage from './pages/ProjectsPage'
 
 const MAIN_ID = 'main-content'
 
@@ -40,10 +41,11 @@ export default function App() {
         key={pathname}
         theme={theme}
         onToggleTheme={toggleTheme}
-        activeSection={route.name === 'project' ? SECTION.projects : undefined}
+        activeSection={route.name === 'project' || route.name === 'projects' ? SECTION.projects : undefined}
       />
       <main id={MAIN_ID}>
         {route.name === 'home' && <HomePage theme={theme} onToggleTheme={toggleTheme} />}
+        {route.name === 'projects' && <ProjectsPage />}
         {route.name === 'project' && <ProjectPage id={route.id} />}
         {route.name === 'notFound' && <NotFoundPage />}
       </main>

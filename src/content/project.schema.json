@@ -3,7 +3,7 @@
   "title": "Portfolio project",
   "description": "One file per project in src/content/projects/. Text fields accept a plain value (same in every language) or an object keyed by locale.",
   "type": "object",
-  "required": ["id", "order", "kind", "title", "summary", "cover", "tags"],
+  "required": ["id", "published", "kind", "title", "summary", "cover", "tags"],
   "additionalProperties": false,
   "definitions": {
     "text": {
@@ -45,7 +45,12 @@
       "type": "string",
       "pattern": "^[a-z0-9-]+$"
     },
-    "order": { "description": "Position in the list, lowest first.", "type": "number" },
+    "published": {
+      "description": "Publication date (YYYY-MM-DD). Projects are listed newest first.",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "order": { "description": "Tie-breaker for projects published on the same day, lowest first.", "type": "number" },
     "hidden": { "description": "Keeps the file but hides the project.", "type": "boolean" },
     "kind": {
       "description": "Badge on the card and page. owned: personal product; exclusive: built exclusively for a company; closed: client work.",
