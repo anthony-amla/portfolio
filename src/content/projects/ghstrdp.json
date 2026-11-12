@@ -19,7 +19,7 @@
     "it": "Un gestore di server RDP per Windows: sessioni in schede, password cifrate sul tuo PC e una cassaforte protetta da PIN. Uno strumento che ho creato per il mio lavoro quotidiano, gratuito e open source.",
     "de": "Ein RDP-Server-Manager für Windows: Sitzungen in Tabs, lokal auf dem eigenen PC verschlüsselte Passwörter und ein PIN-geschützter Tresor. Ein Tool, das ich für meinen Arbeitsalltag gebaut habe, kostenlos und Open Source."
   },
-  "cover": "/projects/ghstrdp/cover.webp",
+  "cover": "https://cdn.ghst.com.br/projects/ghstrdp/cover.webp",
   "tags": ["C#", ".NET", "WPF", "RDP", "Velopack"],
   "link": {
     "href": "https://rdp.ghst.com.br",
@@ -33,7 +33,7 @@
   },
   "gallery": [
     {
-      "src": "/projects/ghstrdp/cover.webp",
+      "src": "https://cdn.ghst.com.br/projects/ghstrdp/cover.webp",
       "caption": {
         "pt-BR": "GhstRDP: seus servidores RDP em um só lugar",
         "en": "GhstRDP: all your RDP servers in one place",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "src": "/projects/ghstrdp/01.webp",
+      "src": "https://cdn.ghst.com.br/projects/ghstrdp/01.webp",
       "caption": {
         "pt-BR": "Servidores organizados por cliente, com status e latência",
         "en": "Servers organized by client, with status and latency",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "src": "/projects/ghstrdp/02.webp",
+      "src": "https://cdn.ghst.com.br/projects/ghstrdp/02.webp",
       "caption": {
         "pt-BR": "Cofre de senhas: as credenciais de cada máquina em um card",
         "en": "Password vault: every machine's credentials in one card",
@@ -63,7 +63,7 @@
       }
     },
     {
-      "src": "/projects/ghstrdp/03.webp",
+      "src": "https://cdn.ghst.com.br/projects/ghstrdp/03.webp",
       "caption": {
         "pt-BR": "Modo sigiloso: IPs falsos e borrados para gravar a tela",
         "en": "Privacy mode: fake, blurred IPs for screen recording",
