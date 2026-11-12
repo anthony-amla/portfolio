@@ -1025,8 +1025,11 @@ a.server-card:hover {
 
 .testimonial-translated {
   display: inline-flex;
+  align-items: center;
+  gap: 5px;
   color: var(--ink-2);
-  cursor: help;
+  font-size: 12px;
+  line-height: 1;
 }
 
 .testimonial-quote {

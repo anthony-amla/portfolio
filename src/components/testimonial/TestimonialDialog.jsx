@@ -64,8 +64,9 @@ export default function TestimonialDialog({ testimonial, onClose }) {
               label={t('testimonials.rating', { n: testimonial.rating })}
             />
             {translated && (
-              <span className="testimonial-translated" title={t(`testimonials.translatedFrom.${testimonial.original}`)}>
-                <Icon name="translate" size={16} label={t(`testimonials.translatedFrom.${testimonial.original}`)} />
+              <span className="testimonial-translated">
+                <Icon name="translate" size={14} />
+                {t(`testimonials.translatedFrom.${testimonial.original}`)}
               </span>
             )}
           </div>

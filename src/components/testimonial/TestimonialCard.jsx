@@ -36,8 +36,9 @@ export default function TestimonialCard({ testimonial }) {
       <div className="testimonial-head">
         <PixelStars rating={testimonial.rating} size={18} label={t('testimonials.rating', { n: testimonial.rating })} />
         {translated && (
-          <span className="testimonial-translated" title={translatedLabel}>
-            <Icon name="translate" size={16} label={translatedLabel} />
+          <span className="testimonial-translated">
+            <Icon name="translate" size={14} />
+            {translatedLabel}
           </span>
         )}
       </div>
