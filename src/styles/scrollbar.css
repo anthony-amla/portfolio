@@ -1,7 +1,9 @@
 /* Chromium and Safari: full custom scrollbar. */
+/* 15px matches the standard Windows scrollbar, so switching to the hidden
+   state below (standard scrollbar-color) does not change the page width. */
 ::-webkit-scrollbar {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -25,6 +27,17 @@
 
 ::-webkit-scrollbar-corner {
   background: var(--toolbar-bg);
+}
+
+/* On the hero the scrollbar is invisible; scrolling keeps working. Chromium
+   does not repaint ::-webkit-scrollbar styles on a class change, but it does
+   for the standard scrollbar-color, so that is what toggles it. */
+html {
+  scrollbar-gutter: stable;
+}
+
+html.hero-scrollbar-hidden {
+  scrollbar-color: transparent transparent;
 }
 
 /* Firefox only supports colors. Kept behind @supports because in Chromium

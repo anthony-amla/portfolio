@@ -1,7 +1,10 @@
+import { useRef } from 'react'
 import Icon from '../components/icons/Icon'
 import { SECTION } from '../config/site'
 import { profile } from '../content/portfolio'
 import Room from '../features/room/Room'
+import ScrollBalloon from '../features/room/ScrollBalloon'
+import { useHeroScrollbar } from '../hooks/useHeroScrollbar'
 import { reveal } from '../hooks/useReveal'
 import { useI18n } from '../i18n/context'
 import { yearsSince } from '../lib/date'
@@ -13,9 +16,12 @@ import { yearsSince } from '../lib/date'
  */
 export default function HeroSection({ theme, onToggleTheme }) {
   const { t } = useI18n()
+  const heroRef = useRef(null)
+
+  useHeroScrollbar(heroRef)
 
   return (
-    <section id={SECTION.home} className="hero" aria-labelledby="hero-title">
+    <section ref={heroRef} id={SECTION.home} className="hero" aria-labelledby="hero-title">
       <div className="container hero-grid">
         <div className="hero-copy">
           <p className="status" {...reveal(0)}>
@@ -47,10 +53,9 @@ export default function HeroSection({ theme, onToggleTheme }) {
         </div>
       </div>
 
-      <a href={`#${SECTION.about}`} className="scroll-hint" aria-label={t('hero.scrollHintLabel')} {...reveal(6)}>
-        <span>{t('hero.scrollHint')}</span>
-        <Icon name="chevronDown" size={22} />
-      </a>
+      <div className="scroll-balloon-wrap">
+        <ScrollBalloon href={`#${SECTION.about}`} label={t('hero.scrollHint')} ariaLabel={t('hero.scrollHintLabel')} />
+      </div>
     </section>
   )
 }
