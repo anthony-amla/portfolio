@@ -12,7 +12,7 @@
     "it": "Infrastruttura vocale per server FiveM: un server rust-mumble per ogni città, con quasi 3.000 giocatori che parlano contemporaneamente nell'ora di punta e il 2,7% di CPU. Sviluppata per WinsVue.",
     "de": "Voice-Infrastruktur für FiveM-Server: ein rust-mumble-Server pro Stadt, mit fast 3.000 Spielern, die zur Spitzenzeit gleichzeitig sprechen, bei 2,7 % CPU. Entwickelt für WinsVue."
   },
-  "cover": "https://cdn.ghst.com.br/projects/wins-voip/01.webp",
+  "cover": "https://cdn.ghst.com.br/projects/wins-voip/cover.webp",
   "tags": ["Rust", "pma-voice", "Docker", "Prometheus", "Grafana"],
   "servers": ["miami", "ladoleste", "nacional", "revoada", "cpx", "sete"],
   "gallery": [
