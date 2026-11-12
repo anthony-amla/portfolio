@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Icon from '../components/icons/Icon'
 import TechLogo from '../components/icons/TechLogo'
+import GalleryLightbox from '../components/project/GalleryLightbox'
 import ProjectCard from '../components/project/ProjectCard'
 import ServerCard from '../components/server/ServerCard'
 import { Chip, Cover, StatusFlag, TechTag, Window } from '../components/ui'
@@ -24,6 +25,7 @@ const mediaOf = (project) => [
 function Gallery({ items, title }) {
   const { t, l } = useI18n()
   const [index, setIndex] = useState(0)
+  const [expanded, setExpanded] = useState(false)
   const step = (delta) => setIndex((current) => (current + delta + items.length) % items.length)
   const current = items[index]
   const caption = current && l(current.caption)
@@ -44,7 +46,14 @@ function Gallery({ items, title }) {
           aria-label={caption || t('projectPage.video')}
         />
       ) : (
-        <Cover key={current.src} src={current.src} title={caption || title} className="gallery-image" />
+        <button
+          type="button"
+          className="gallery-zoom"
+          onClick={() => setExpanded(true)}
+          aria-label={t('common.expandImage')}
+        >
+          <Cover key={current.src} src={current.src} title={caption || title} className="gallery-image" />
+        </button>
       )}
       {caption && <figcaption className="gallery-caption">{caption}</figcaption>}
 
@@ -87,6 +96,10 @@ function Gallery({ items, title }) {
             ))}
           </ul>
         </>
+      )}
+
+      {expanded && (
+        <GalleryLightbox items={items} index={index} onStep={step} onClose={() => setExpanded(false)} title={title} />
       )}
     </figure>
   )
@@ -198,7 +211,7 @@ function ProjectDetails({ project }) {
           )}
 
           {project.flow?.length > 0 && (
-            <DetailSection title={t('projectPage.flow')} icon="gitBranch">
+            <DetailSection title={project.flowTitle ? l(project.flowTitle) : t('projectPage.flow')} icon="gitBranch">
               <ol className="flow-list">
                 {project.flow.map((step, index) => (
                   <li key={l(step.name)} className="flow-step">

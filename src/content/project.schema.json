@@ -103,6 +103,10 @@
       "type": "array",
       "items": { "type": "string" }
     },
+    "flowTitle": {
+      "description": "Overrides the 'How it works' heading (e.g. 'How to install').",
+      "$ref": "#/definitions/text"
+    },
     "flow": {
       "description": "Ordered steps of 'How it works'.",
       "type": "array",

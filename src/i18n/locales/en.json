@@ -9,7 +9,9 @@
     "skipToContent": "Skip to content",
     "noImage": "{title} (no image)",
     "previousImage": "Previous image",
-    "nextImage": "Next image"
+    "nextImage": "Next image",
+    "expandImage": "Expand image",
+    "close": "Close"
   },
   "nav": {
     "label": "Sections",
