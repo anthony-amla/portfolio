@@ -124,6 +124,12 @@
   font-size: 40px;
 }
 
+/* Images keep their own proportion (16:9 only while loading), so the frame never shows empty bands. */
+img.gallery-image {
+  height: auto;
+  aspect-ratio: auto 16 / 9;
+}
+
 .gallery {
   margin: 0;
 }
